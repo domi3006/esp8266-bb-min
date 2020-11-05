@@ -19,24 +19,24 @@ outputs:
       output: Schematic.pdf
 
   - name: 'print_front'
-    comment: "Print F.Cu+Dwgs.User"
+    comment: "Print Front + F.SilkS"
     type: pdf_pcb_print
     dir: .
     options:
       output_name: PCB_Top.pdf
     layers:
-      - layer: F.Cu
-      - layer: Dwgs.User
+      - layer: Front
+      - layer: f.SilkS
 
   - name: 'print_bottom'
-    comment: "Print B.Cu+Dwgs.User"
+    comment: "Print Back + B.SilkS"
     type: pdf_pcb_print
     dir: .
     options:
       output_name: PCB_Bottom.pdf
     layers:
-      - layer: B.Cu
-      - layer: Dwgs.User
+      - layer: Back
+      - layer: B.SilkS
 
   - name: 'interactive_bom'
     comment: "Interactive Bill of Materials (HTML)"

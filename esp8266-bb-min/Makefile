@@ -14,12 +14,12 @@ sch_fab:
 	kiplot -d Fabrication -s run_erc,run_drc  print_sch interactive_bom bom_html bom_csv
 
 pcb_fab:
-	kiplot -d Fabrication -s all print_front print_bottom gerbers excellon_drill gerber_drills position
+	kiplot -d Fabrication -s all print_front print_bottom
 
 erc_and_fab:
 	kiplot -d Fabrication -s run_drc  print_sch interactive_bom bom_html bom_csv
 
 drc_and_fab:
-	kiplot -d Fabrication -s run_erc,update_xml print_front print_bottom gerbers excellon_drill gerber_drills position
+	kiplot -d Fabrication -s run_erc,update_xml print_front print_bottom
 
 
