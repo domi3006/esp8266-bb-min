@@ -173,7 +173,7 @@ L Device:CP_Small C2
 U 1 1 5FA30A7D
 P 4600 1700
 F 0 "C2" H 4688 1746 50  0000 L CNN
-F 1 "10uF" H 4688 1655 50  0000 L CNN
+F 1 "47uF" H 4688 1655 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_6.3x9.9" H 4600 1700 50  0001 C CNN
 F 3 "~" H 4600 1700 50  0001 C CNN
 	1    4600 1700
@@ -373,25 +373,25 @@ Text Label 6950 1250 2    50   ~ 0
 3V3
 Text Label 7450 1250 0    50   ~ 0
 GND
-Text Label 7450 1350 0    50   ~ 0
-ESP_RXD
 Text Label 6950 1350 2    50   ~ 0
+ESP_RXD
+Text Label 7450 1350 0    50   ~ 0
 ESP_TXD
-Text Label 6950 1450 2    50   ~ 0
-ESP_GPIO0
-Text Label 6950 1750 2    50   ~ 0
-ESP_GPIO2
-Text Label 7450 1750 0    50   ~ 0
-ESP_GPIO14
-Text Label 7450 1450 0    50   ~ 0
-ESP_GPIO4
-Text Label 6950 1550 2    50   ~ 0
-ESP_GPIO5
-Text Label 7450 1650 0    50   ~ 0
-ESP_GPIO12
-Text Label 6950 1650 2    50   ~ 0
-ESP_GPIO13
 Text Label 7450 1550 0    50   ~ 0
+ESP_GPIO0
+Text Label 6950 1650 2    50   ~ 0
+ESP_GPIO2
+Text Label 7450 1650 0    50   ~ 0
+ESP_GPIO14
+Text Label 6950 1450 2    50   ~ 0
+ESP_GPIO4
+Text Label 7450 1450 0    50   ~ 0
+ESP_GPIO5
+Text Label 7450 1750 0    50   ~ 0
+ESP_GPIO12
+Text Label 6950 1750 2    50   ~ 0
+ESP_GPIO13
+Text Label 6950 1550 2    50   ~ 0
 ESP_GPIO15
 Text Label 6050 5650 0    50   ~ 0
 GND
