@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "esp8266-bb-min"
 Date ""
-Rev ""
+Rev "v01.00"
 Comp ""
 Comment1 ""
 Comment2 ""
