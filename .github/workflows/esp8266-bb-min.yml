@@ -1,131 +1,40 @@
-name: CI
+name: esp8266-bb-min
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
     branches: [ master ]
-    paths:
-      - 'esp8266-bb-min/esp8266-bb-min.sch'
-      - 'esp8266-bb-min/esp8266-bb-min.kicad_pcb'
-      - '.github/workflows/esp8266-bb-min.yml'
   pull_request:
     branches: [ master ]
-    paths:
-      - 'esp8266-bb-min/esp8266-bb-min.sch'
-      - 'esp8266-bb-min/esp8266-bb-min.kicad_pcb'
-      - '.github/workflows/esp8266-bb-min.yml'
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  get_submodules:
-    runs-on: ubuntu-latest
-
+  erc_schematic_bom:
+    runs-on: ubuntu-20.04
+    container: domi3006/docker-kicad-ci:latest
     steps:
     - uses: actions/checkout@v2
       with:
         submodules: 'true'
-
-    - name: Store submodule
-      uses: actions/upload-artifact@v1
-      with:
-        name: Submodule
-        path: libraries_ext/
-
-  ERC:
-    runs-on: ubuntu-latest
-    container: setsoft/kicad_auto:latest
-    needs: get_submodules
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Get submodule
-      uses: actions/download-artifact@v2
-      with:
-        name: Submodule
-        path: libraries_ext/
-
-    - name: Run ERC
+    - name: run erc_and_fab
       run: |
-        make -C esp8266-bb-min/ erc
-
+        make -C esp8266-bb-min/ erc_and_fab
     - name: Retrieve results
       uses: actions/upload-artifact@v1
       with:
-        name: ERC_Output
+        name: erc_schematic_bom
         path: esp8266-bb-min/Fabrication
 
-  DRC:
-    runs-on: ubuntu-latest
-    container: setsoft/kicad_auto:latest
-    needs: ERC
-
+  drc:
+    runs-on: ubuntu-20.04
+    container: domi3006/docker-kicad-ci:latest
     steps:
     - uses: actions/checkout@v2
-
-    - name: Get submodule
-      uses: actions/download-artifact@v2
       with:
-        name: Submodule
-        path: libraries_ext/
-
-    - name: Run DRC
+        submodules: 'true'
+    - name: run drc
       run: |
         make -C esp8266-bb-min/ drc
-
     - name: Retrieve results
       uses: actions/upload-artifact@v1
       with:
-        name: DRC_Output
+        name: drc
         path: esp8266-bb-min/Fabrication
-
-  FabSch:
-    name: Schematic fabrication files
-    runs-on: ubuntu-latest
-    container: setsoft/kicad_auto:latest
-    needs: ERC
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Get submodule
-      uses: actions/download-artifact@v2
-      with:
-        name: Submodule
-        path: libraries_ext/
-
-    - name: Run schematic stuff
-      run: |
-        make -C esp8266-bb-min/ sch_fab
-
-    - name: Retrieve results
-      uses: actions/upload-artifact@v1
-      with:
-        name: FabSch_Output
-        path: esp8266-bb-min/Fabrication
-
-          #  FabPCB:
-          #    name: PCB fabrication files
-          #    runs-on: ubuntu-latest
-          #    container: setsoft/kicad_auto:latest
-          #    needs: ERC
-          #
-          #    steps:
-          #    - uses: actions/checkout@v2
-          #
-          #    - name: Get submodule
-          #      uses: actions/download-artifact@v2
-          #      with:
-          #        name: Submodule
-          #        path: libraries_ext/
-          #
-          #    - name: Run PCB stuff
-          #      run: |
-          #        make -C esp8266-bb-min/ pcb_fab
-          #
-          #    - name: Retrieve results
-          #      uses: actions/upload-artifact@v1
-          #      with:
-          #        name: FabPCB_Output
-          #        path: esp8266-bb-min/Fabrication
