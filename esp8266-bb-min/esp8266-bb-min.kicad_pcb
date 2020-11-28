@@ -12,7 +12,7 @@
   (page A4)
   (title_block
     (title esp8266-bb-min)
-    (rev v01.00)
+    (rev v02.00)
   )
 
   (layers
