@@ -177,7 +177,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 3600 4400 3500
 Wire Wire Line
-	4400 3500 3700 3500
+	4400 3500 4050 3500
 Wire Wire Line
 	3700 3600 3700 3500
 Connection ~ 3700 3500
@@ -228,7 +228,7 @@ Connection ~ 6000 5650
 Wire Wire Line
 	6000 5650 6050 5650
 Text Label 6000 5250 0    50   ~ 0
-ESP_GPIO16
+~ESP_RST
 Text Label 6000 5150 0    50   ~ 0
 ESP_GPIO15
 Wire Wire Line
@@ -683,8 +683,6 @@ Wire Wire Line
 Wire Wire Line
 	9350 2200 9350 2050
 Wire Wire Line
-	9350 2050 9850 2050
-Wire Wire Line
 	9150 2100 9250 2100
 Wire Wire Line
 	9250 2100 9250 1950
@@ -704,8 +702,6 @@ Text Label 7250 2050 0    50   ~ 0
 ESP_GPIO13
 Text Label 9850 1950 0    50   ~ 0
 ESP_GPIO15
-Text Label 9850 2050 0    50   ~ 0
-ESP_GPIO16
 $Comp
 L Connector:Conn_01x06_Male J4
 U 1 1 5FC5FD68
@@ -780,4 +776,59 @@ Wire Wire Line
 Connection ~ 3700 4550
 Text Label 3000 4550 2    50   ~ 0
 ESP_EN
+$Comp
+L Device:C_Small C5
+U 1 1 5FC2756C
+P 4050 3800
+F 0 "C5" H 4142 3846 50  0000 L CNN
+F 1 "100nF" H 4142 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4050 3800 50  0001 C CNN
+F 3 "~" H 4050 3800 50  0001 C CNN
+	1    4050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4250 4150 3950
+Wire Wire Line
+	4150 3950 4050 3950
+Wire Wire Line
+	4050 3950 4050 3900
+Wire Wire Line
+	4050 3700 4050 3500
+Connection ~ 4050 3500
+Wire Wire Line
+	4050 3500 3700 3500
+Text Notes 4350 5850 0    50   ~ 0
+place C5 directly at pad ~RST
+$Comp
+L Connector:Conn_01x02_Male J7
+U 1 1 5FC27C22
+P 8950 4100
+F 0 "J7" H 9058 4281 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 9058 4190 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 8950 4100 50  0001 C CNN
+F 3 "~" H 8950 4100 50  0001 C CNN
+	1    8950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4200 9500 4200
+Wire Wire Line
+	9150 4100 9500 4100
+Text Label 9500 4100 0    50   ~ 0
+~ESP_RST
+$Comp
+L power:GND #PWR011
+U 1 1 5FC3B1D1
+P 9500 4200
+F 0 "#PWR011" H 9500 3950 50  0001 C CNN
+F 1 "GND" H 9505 4027 50  0000 C CNN
+F 2 "" H 9500 4200 50  0001 C CNN
+F 3 "" H 9500 4200 50  0001 C CNN
+	1    9500 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2050 9850 2050
+NoConn ~ 9850 2050
 $EndSCHEMATC
