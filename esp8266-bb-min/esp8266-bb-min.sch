@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "esp8266-bb-min"
 Date ""
-Rev "v01.00"
+Rev "v02.00"
 Comp ""
 Comment1 ""
 Comment2 ""
