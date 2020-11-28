@@ -59,17 +59,6 @@ F 3 "~" H 3000 1750 50  0001 C CNN
 	1    3000 1750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP_Small C2
-U 1 1 5FA30A7D
-P 4600 1700
-F 0 "C2" H 4688 1746 50  0000 L CNN
-F 1 "47uF" H 4688 1655 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x9.9" H 4600 1700 50  0001 C CNN
-F 3 "~" H 4600 1700 50  0001 C CNN
-	1    4600 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4600 2150 4600 1800
 Wire Wire Line
@@ -114,13 +103,12 @@ Wire Wire Line
 Wire Wire Line
 	4200 4450 4200 4550
 Wire Wire Line
-	4200 4550 4050 4550
+	4200 4550 4100 4550
 Wire Wire Line
 	3850 4550 3700 4550
 Wire Wire Line
 	3700 4550 3700 4250
 Connection ~ 3700 4250
-NoConn ~ 4250 4650
 $Comp
 L Device:R_Small R3
 U 1 1 5FA352F2
@@ -399,8 +387,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 1400 3000 1650
 Wire Wire Line
-	3000 2150 3400 2150
-Wire Wire Line
 	4000 1800 4000 2150
 Connection ~ 4000 2150
 Wire Wire Line
@@ -439,12 +425,12 @@ Connection ~ 3000 1400
 $Comp
 L Device:R_Small R7
 U 1 1 5FC4664C
-P 3400 1750
-F 0 "R7" V 3204 1750 50  0000 C CNN
-F 1 "56k" V 3295 1750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3400 1750 50  0001 C CNN
-F 3 "~" H 3400 1750 50  0001 C CNN
-	1    3400 1750
+P 3400 1700
+F 0 "R7" V 3204 1700 50  0000 C CNN
+F 1 "15k" V 3295 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3400 1700 50  0001 C CNN
+F 3 "~" H 3400 1700 50  0001 C CNN
+	1    3400 1700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -454,14 +440,6 @@ Wire Wire Line
 Connection ~ 3400 1400
 Wire Wire Line
 	3400 1400 3000 1400
-Wire Wire Line
-	3400 1500 3400 1650
-Connection ~ 3400 1500
-Wire Wire Line
-	3400 1850 3400 2150
-Connection ~ 3400 2150
-Wire Wire Line
-	3400 2150 4000 2150
 $Comp
 L power:+3.3V #PWR0110
 U 1 1 5FC51A47
@@ -492,8 +470,8 @@ $EndComp
 Connection ~ 9600 3400
 Wire Wire Line
 	9600 3400 9800 3400
-Text Notes 2700 2350 0    50   ~ 0
--BATT and GND should meet at ldo\nC1 should be placed near to IN (max. 1cm)
+Text Notes 2750 2550 0    50   ~ 0
+-BATT and GND should meet at ldo\nC1 should be placed near to IN (max. 1cm)\nR7 + R8 need very high tolerance (0.1%)\nR7 + R8 : +BAT max = 4.5V
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 5FC29144
@@ -771,9 +749,6 @@ Text Label 7250 2950 0    50   ~ 0
 ESP_GPIO0
 Text Label 7250 3050 0    50   ~ 0
 ESP_EN
-Wire Wire Line
-	3700 4550 3000 4550
-Connection ~ 3700 4550
 Text Label 3000 4550 2    50   ~ 0
 ESP_EN
 $Comp
@@ -831,4 +806,60 @@ $EndComp
 Wire Wire Line
 	9350 2050 9850 2050
 NoConn ~ 9850 2050
+$Comp
+L Device:R_Small R8
+U 1 1 5FC28F9A
+P 3400 2000
+F 0 "R8" V 3204 2000 50  0000 C CNN
+F 1 "39k" V 3295 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3400 2000 50  0001 C CNN
+F 3 "~" H 3400 2000 50  0001 C CNN
+	1    3400 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 2150 3400 2150
+Wire Wire Line
+	3400 1500 3400 1600
+Connection ~ 3400 1500
+Wire Wire Line
+	3400 1800 3400 1850
+Wire Wire Line
+	3400 2100 3400 2150
+Connection ~ 3400 2150
+Wire Wire Line
+	3400 2150 4000 2150
+Wire Wire Line
+	3400 1850 3550 1850
+Connection ~ 3400 1850
+Wire Wire Line
+	3400 1850 3400 1900
+Text Label 3550 1850 0    50   ~ 0
+ESP_ADC
+Text Label 3000 4650 2    50   ~ 0
+ESP_ADC
+$Comp
+L Device:CP_Small C2
+U 1 1 5FA30A7D
+P 4600 1700
+F 0 "C2" H 4688 1746 50  0000 L CNN
+F 1 "47uF" H 4688 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x9.9" H 4600 1700 50  0001 C CNN
+F 3 "~" H 4600 1700 50  0001 C CNN
+	1    4600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4550 3600 4550
+Wire Wire Line
+	3600 4550 3600 4600
+Wire Wire Line
+	3600 4600 4100 4600
+Wire Wire Line
+	4100 4600 4100 4550
+Connection ~ 4100 4550
+Wire Wire Line
+	4100 4550 4050 4550
+Wire Wire Line
+	3000 4650 4250 4650
 $EndSCHEMATC
