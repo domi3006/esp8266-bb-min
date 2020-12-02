@@ -1,25 +1,18 @@
 #!/usr/bin/make
 
-.PHONY: erc drc sch_fab pcb_fab erc_and_fab drc_and_fab
+.PHONY: all clean tests artifacts
 
-all: erc_and_fab drc_and_fab
+all: tests artifacts
 
-erc:
-	kiplot -d Fabrication -s run_drc,update_xml -i
+clean:
+	@rm -rf Fabrication
 
-drc:
-	kiplot -d Fabrication -s run_erc,update_xml -i
+Fabrication:
+	@rm -rf Fabrication
+	@mkdir -p Fabrication
 
-sch_fab:
-	kiplot -d Fabrication -s run_erc,run_drc  print_sch interactive_bom bom_html bom_csv
+tests: Fabrication
+	kiplot -d Fabrication preflight
 
-pcb_fab:
-	kiplot -d Fabrication -s all print_front print_bottom
-
-erc_and_fab:
-	kiplot -d Fabrication -s run_drc  print_sch interactive_bom bom_html bom_csv
-
-drc_and_fab:
-	kiplot -d Fabrication -s run_erc,update_xml print_front print_bottom
-
-
+artifacts: Fabrication
+	kiplot -d Fabrication -s run_erc,run_drc pdf_pcb_print pcbdraw_bot pcbdraw_top step dxf ibom pdf_sch_print
