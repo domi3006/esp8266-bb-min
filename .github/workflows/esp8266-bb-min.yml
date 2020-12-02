@@ -7,34 +7,37 @@ on:
     branches: [ master ]
 
 jobs:
-  erc_schematic_bom:
+  tests:
     runs-on: ubuntu-20.04
     container: domi3006/docker-kicad-ci:latest
     steps:
     - uses: actions/checkout@v2
       with:
         submodules: 'true'
-    - name: run erc_and_fab
+    - name: run tests
       run: |
-        make -C esp8266-bb-min/ erc_and_fab
+        make tests
     - name: Retrieve results
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
       with:
-        name: erc_schematic_bom
-        path: esp8266-bb-min/Fabrication
+        name: tests
+        path: |
+          Fabrication/
 
-  drc:
+
+  artifacts:
     runs-on: ubuntu-20.04
     container: domi3006/docker-kicad-ci:latest
     steps:
     - uses: actions/checkout@v2
       with:
         submodules: 'true'
-    - name: run drc
+    - name: run artifacts
       run: |
-        make -C esp8266-bb-min/ drc
+        make artifacts
     - name: Retrieve results
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
       with:
-        name: drc
-        path: esp8266-bb-min/Fabrication
+        name: artifacts
+        path: |
+          Fabrication/
