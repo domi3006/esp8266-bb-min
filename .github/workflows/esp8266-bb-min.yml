@@ -9,7 +9,7 @@ on:
 jobs:
   tests:
     runs-on: ubuntu-20.04
-    container: domi3006/docker-kicad-ci:latest
+    container: ghcr.io/domi3006/docker-kicad-ci:latest
     steps:
     - uses: actions/checkout@v2
       with:
@@ -27,7 +27,7 @@ jobs:
 
   artifacts:
     runs-on: ubuntu-20.04
-    container: domi3006/docker-kicad-ci:latest
+    container: ghcr.io/domi3006/docker-kicad-ci:latest
     steps:
     - uses: actions/checkout@v2
       with:
