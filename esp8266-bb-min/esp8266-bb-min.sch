@@ -427,7 +427,7 @@ L Device:R_Small R7
 U 1 1 5FC4664C
 P 3400 1700
 F 0 "R7" V 3204 1700 50  0000 C CNN
-F 1 "15k" V 3295 1700 50  0000 C CNN
+F 1 "47k" V 3295 1700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3400 1700 50  0001 C CNN
 F 3 "~" H 3400 1700 50  0001 C CNN
 	1    3400 1700
@@ -471,7 +471,7 @@ Connection ~ 9600 3400
 Wire Wire Line
 	9600 3400 9800 3400
 Text Notes 2750 2550 0    50   ~ 0
--BATT and GND should meet at ldo\nC1 should be placed near to IN (max. 1cm)\nR7 + R8 need very high tolerance (0.1%)\nR7 + R8 : +BAT max = 4.5V
+-BATT and GND should meet at ldo\nC1 should be placed near to IN (max. 1cm)\nR7 + R8 need very high tolerance (0.1%)\nR7 + R8 : +BAT max = 6.16V
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 5FC29144
@@ -811,7 +811,7 @@ L Device:R_Small R8
 U 1 1 5FC28F9A
 P 3400 2000
 F 0 "R8" V 3204 2000 50  0000 C CNN
-F 1 "39k" V 3295 2000 50  0000 C CNN
+F 1 "9k1" V 3295 2000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3400 2000 50  0001 C CNN
 F 3 "~" H 3400 2000 50  0001 C CNN
 	1    3400 2000
