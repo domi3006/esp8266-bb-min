@@ -666,13 +666,13 @@ Wire Wire Line
 	9250 2100 9250 1950
 Wire Wire Line
 	9250 1950 9850 1950
-Text Label 7250 1150 0    50   ~ 0
-ESP_GPIO2
 Text Label 7250 1250 0    50   ~ 0
+ESP_GPIO2
+Text Label 7250 1150 0    50   ~ 0
 ESP_GPIO14
-Text Label 9850 1150 0    50   ~ 0
-ESP_GPIO4
 Text Label 9850 1250 0    50   ~ 0
+ESP_GPIO4
+Text Label 9850 1150 0    50   ~ 0
 ESP_GPIO5
 Text Label 7250 1950 0    50   ~ 0
 ESP_GPIO12
