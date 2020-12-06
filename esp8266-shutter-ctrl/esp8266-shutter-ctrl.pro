@@ -1,4 +1,4 @@
-update=So 06 Dez 2020 00:07:41 CET
+update=So 06 Dez 2020 09:30:23 CET
 version=1
 last_client=kicad
 [general]
@@ -42,6 +42,7 @@ TrackWidth1=0.25
 TrackWidth2=0.1
 TrackWidth3=0.2
 TrackWidth4=0.5
+TrackWidth5=1
 ViaDiameter1=0.8
 ViaDrill1=0.4
 ViaDiameter2=0.45
@@ -274,4 +275,15 @@ uViaDiameter=0.45
 uViaDrill=0.2
 dPairWidth=0.12
 dPairGap=0.12
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
+Name=Super
+Clearance=0.5
+TrackWidth=1
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.8
+uViaDrill=0.4
+dPairWidth=0.25
+dPairGap=0.25
 dPairViaGap=0.25
