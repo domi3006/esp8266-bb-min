@@ -7,25 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  tests:
-    runs-on: ubuntu-20.04
-    container: ghcr.io/domi3006/docker-kicad-ci:latest
-    steps:
-    - uses: actions/checkout@v2
-      with:
-        submodules: 'true'
-    - name: run tests
-      run: |
-        make tests
-    - name: Retrieve results
-      uses: actions/upload-artifact@v2
-      with:
-        name: tests
-        path: |
-          Fabrication/
-
-
-  artifacts:
+  gen_artifacts:
     runs-on: ubuntu-20.04
     container: ghcr.io/domi3006/docker-kicad-ci:latest
     steps:
@@ -34,7 +16,7 @@ jobs:
         submodules: 'true'
     - name: run artifacts
       run: |
-        make artifacts
+        make all
     - name: Retrieve results
       uses: actions/upload-artifact@v2
       with:
