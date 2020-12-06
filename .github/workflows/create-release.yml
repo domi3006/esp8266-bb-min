@@ -17,6 +17,22 @@ jobs:
     - name: create artifacts
       run: |
         make all
+    - name: upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: artifacts
+        path: |
+          Fabrication/
+
+  create_release:
+    runs-on: ubuntu-20.04
+    needs: gen_artifacts
+    steps:
+    - name: get artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: artifacts
+        path: Fabrication/
     - name: create release-zip from artifacts
       run: |
         zip --junk-paths fabrication Fabrication/
