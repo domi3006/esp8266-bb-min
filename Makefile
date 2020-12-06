@@ -20,11 +20,12 @@ tests: .prep
 		echo "############################################################################"; \
 		echo "#### Generating tests for $$pro"; \
 		echo "############################################################################"; \
+		ROOT=$$(pwd); \
 		cd $$(dirname $$pro); \
 		output_dir=$$(echo $(OUTPUT_BASE)/$$(basename $$pro) | cut -f 1 -d '.'); \
 		mkdir -p $$output_dir; \
-		kiplot -d $$output_dir preflight; \
-		cd $(OUTPUT_BASE)/..; \
+		kiplot -c $$ROOT/base.kiplot.yaml -d $$output_dir preflight || exit $$?; \
+		cd $$ROOT; \
 	done
 
 artifacts: .prep
@@ -32,9 +33,10 @@ artifacts: .prep
 		echo "############################################################################"; \
 		echo "#### Generating artifacts for $$pro"; \
 		echo "############################################################################"; \
+		ROOT=$$(pwd); \
 		cd $$(dirname $$pro); \
 		output_dir=$$(echo $(OUTPUT_BASE)/$$(basename $$pro) | cut -f 1 -d '.'); \
 		mkdir -p $$output_dir; \
-		kiplot -d $$output_dir -s run_erc,run_drc pdf_pcb_print pcbdraw_bot pcbdraw_top step dxf ibom pdf_sch_print; \
-		cd $(OUTPUT_BASE)/..; \
+		kiplot -c $$ROOT/base.kiplot.yaml -d $$output_dir -s run_erc,run_drc pdf_pcb_print pcbdraw_bot pcbdraw_top step dxf ibom pdf_sch_print || exit $$?; \
+		cd $$ROOT; \
 	done
