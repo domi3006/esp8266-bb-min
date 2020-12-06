@@ -1,0 +1,167 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Converter_DCDC:TEC2-1211WI U8
+U 1 1 601DDF78
+P 4900 3250
+F 0 "U8" H 4900 3717 50  0000 C CNN
+F 1 "TEC2-1211WI" H 4900 3626 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT" H 4900 2900 50  0001 C CNN
+F 3 "https://www.tracopower.com/products/tec2wi.pdf" H 4900 2750 50  0001 C CNN
+	1    4900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L1
+U 1 1 601DF85A
+P 3650 3050
+F 0 "L1" V 3835 3050 50  0000 C CNN
+F 1 "4.7uH" V 3744 3050 50  0000 C CNN
+F 2 "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP" H 3650 3050 50  0001 C CNN
+F 3 "~" H 3650 3050 50  0001 C CNN
+	1    3650 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 3050 3850 3050
+Wire Wire Line
+	3550 3050 3300 3050
+Wire Wire Line
+	4400 3450 4150 3450
+$Comp
+L Device:C_Small C18
+U 1 1 601E0659
+P 3850 3250
+F 0 "C18" H 3942 3296 50  0000 L CNN
+F 1 "2.2uF" H 3942 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3850 3250 50  0001 C CNN
+F 3 "~" H 3850 3250 50  0001 C CNN
+	1    3850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 601E0980
+P 3300 3250
+F 0 "C17" H 3392 3296 50  0000 L CNN
+F 1 "4.7uF" H 3392 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3300 3250 50  0001 C CNN
+F 3 "~" H 3300 3250 50  0001 C CNN
+	1    3300 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3150 3300 3050
+Connection ~ 3300 3050
+Wire Wire Line
+	3300 3050 3000 3050
+Wire Wire Line
+	3300 3350 3300 3450
+Connection ~ 3300 3450
+Wire Wire Line
+	3300 3450 3000 3450
+Wire Wire Line
+	3850 3350 3850 3450
+Connection ~ 3850 3450
+Wire Wire Line
+	3850 3450 3300 3450
+Wire Wire Line
+	3850 3150 3850 3050
+Connection ~ 3850 3050
+Wire Wire Line
+	3850 3050 4050 3050
+Wire Wire Line
+	5400 3450 5700 3450
+Wire Wire Line
+	5400 3050 6500 3050
+Wire Wire Line
+	4150 3450 4150 3900
+Connection ~ 4150 3450
+Wire Wire Line
+	4150 3450 3850 3450
+Wire Wire Line
+	5700 3900 5700 3450
+Connection ~ 5700 3450
+Wire Wire Line
+	5700 3450 6500 3450
+Wire Wire Line
+	4150 3900 5700 3900
+$Comp
+L power:GND #PWR017
+U 1 1 601E626A
+P 6500 3450
+F 0 "#PWR017" H 6500 3200 50  0001 C CNN
+F 1 "GND" H 6505 3277 50  0000 C CNN
+F 2 "" H 6500 3450 50  0001 C CNN
+F 3 "" H 6500 3450 50  0001 C CNN
+	1    6500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 601E7114
+P 3000 3450
+F 0 "#PWR015" H 3000 3200 50  0001 C CNN
+F 1 "GND" H 3005 3277 50  0000 C CNN
+F 2 "" H 3000 3450 50  0001 C CNN
+F 3 "" H 3000 3450 50  0001 C CNN
+	1    3000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR016
+U 1 1 601E83C8
+P 6500 3050
+F 0 "#PWR016" H 6500 2900 50  0001 C CNN
+F 1 "+5V" H 6515 3223 50  0000 C CNN
+F 2 "" H 6500 3050 50  0001 C CNN
+F 3 "" H 6500 3050 50  0001 C CNN
+	1    6500 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3250 4250 3250
+Wire Wire Line
+	4250 3250 4250 3050
+Wire Wire Line
+	4250 3050 4400 3050
+Connection ~ 4250 3050
+$Comp
+L power:+12V #PWR0167
+U 1 1 602068A4
+P 3000 3050
+F 0 "#PWR0167" H 3000 2900 50  0001 C CNN
+F 1 "+12V" H 3015 3223 50  0000 C CNN
+F 2 "" H 3000 3050 50  0001 C CNN
+F 3 "" H 3000 3050 50  0001 C CNN
+	1    3000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60308AE2
+P 4050 3050
+F 0 "#FLG0102" H 4050 3125 50  0001 C CNN
+F 1 "PWR_FLAG" H 4050 3223 50  0000 C CNN
+F 2 "" H 4050 3050 50  0001 C CNN
+F 3 "~" H 4050 3050 50  0001 C CNN
+	1    4050 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 3050
+Wire Wire Line
+	4050 3050 4250 3050
+$EndSCHEMATC
