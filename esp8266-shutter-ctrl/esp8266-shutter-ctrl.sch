@@ -87,45 +87,45 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 6022BCCB
-P 1750 4250
-F 0 "H2" H 1850 4296 50  0000 L CNN
-F 1 "MountingHole" H 1850 4205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 1750 4250 50  0001 C CNN
-F 3 "~" H 1750 4250 50  0001 C CNN
-	1    1750 4250
+P 2000 6500
+F 0 "H2" H 2100 6546 50  0000 L CNN
+F 1 "MountingHole" H 2100 6455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 2000 6500 50  0001 C CNN
+F 3 "~" H 2000 6500 50  0001 C CNN
+	1    2000 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 6022BE3C
-P 2650 4250
-F 0 "H4" H 2750 4296 50  0000 L CNN
-F 1 "MountingHole" H 2750 4205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 2650 4250 50  0001 C CNN
-F 3 "~" H 2650 4250 50  0001 C CNN
-	1    2650 4250
+P 2000 6800
+F 0 "H4" H 2100 6846 50  0000 L CNN
+F 1 "MountingHole" H 2100 6755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 2000 6800 50  0001 C CNN
+F 3 "~" H 2000 6800 50  0001 C CNN
+	1    2000 6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 6022BF25
-P 2600 4700
-F 0 "H3" H 2700 4746 50  0000 L CNN
-F 1 "MountingHole" H 2700 4655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 2600 4700 50  0001 C CNN
-F 3 "~" H 2600 4700 50  0001 C CNN
-	1    2600 4700
+P 1000 6800
+F 0 "H3" H 1100 6846 50  0000 L CNN
+F 1 "MountingHole" H 1100 6755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 1000 6800 50  0001 C CNN
+F 3 "~" H 1000 6800 50  0001 C CNN
+	1    1000 6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 6022BFD2
-P 1650 4650
-F 0 "H1" H 1750 4696 50  0000 L CNN
-F 1 "MountingHole" H 1750 4605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 1650 4650 50  0001 C CNN
-F 3 "~" H 1650 4650 50  0001 C CNN
-	1    1650 4650
+P 1000 6500
+F 0 "H1" H 1100 6546 50  0000 L CNN
+F 1 "MountingHole" H 1100 6455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 1000 6500 50  0001 C CNN
+F 3 "~" H 1000 6500 50  0001 C CNN
+	1    1000 6500
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -157,4 +157,32 @@ U 5FCBAC22
 F0 "power" 50
 F1 "power.sch" 50
 $EndSheet
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5FCE119A
+P 1000 7100
+F 0 "H5" H 1100 7146 50  0000 L CNN
+F 1 "MountingHole" H 1100 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 1000 7100 50  0001 C CNN
+F 3 "~" H 1000 7100 50  0001 C CNN
+	1    1000 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 5FCE1374
+P 2000 7100
+F 0 "H6" H 2100 7146 50  0000 L CNN
+F 1 "MountingHole" H 2100 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 2000 7100 50  0001 C CNN
+F 3 "~" H 2000 7100 50  0001 C CNN
+	1    2000 7100
+	1    0    0    -1  
+$EndComp
+Text Notes 2850 6550 0    50   ~ 0
+H?: XXX.XX mm/YYY.YY mm\nH1: 005.75 mm/005.75 mm\nH2: 174.25 mm/005.75 mm\nH3: 174.25 mm/074.25 mm\nH4: 005.75 mm/074.25 mm\nH5: 080.00 mm/005.75 mm\nH6: 080.00 mm/074.25 mm
+Text Notes 2850 5800 0    50   ~ 0
+Portexpander I2C addresses:\n\nLEDs:     0x26\nSwitches: 0x27\nOutput:   0x25
+Text Notes 4000 7350 0    50   ~ 0
+SW??: XXX.X mm/YYY.Y mm\nSW01: 017.9 mm/027.2 mm\nSW02: 038.5 mm/027.2 mm\nSW03: 059.1 mm/027.2 mm\nSW04: 079.7 mm/027.2 mm\nSW05: 100.3 mm/027.2 mm\nSW06: 120.9 mm/027.2 mm\nSW07: 141.5 mm/027.2 mm\nSW08: 162.1 mm/027.2 mm\nSW09: 017.9 mm/052.8 mm\nSW10: 038.5 mm/052.8 mm\nSW11: 059.1 mm/052.8 mm\nSW12: 079.7 mm/052.8 mm\nSW13: 100.3 mm/052.8 mm\nSW14: 120.9 mm/052.8 mm\nSW15: 141.5 mm/052.8 mm\nSW16: 162.1 mm/052.8 mm
 $EndSCHEMATC
