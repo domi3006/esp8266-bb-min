@@ -37,6 +37,7 @@ artifacts: .prep
 		cd $$(dirname $$pro); \
 		output_dir=$$(echo $(OUTPUT_BASE)/$$(basename $$pro) | cut -f 1 -d '.'); \
 		mkdir -p $$output_dir; \
+		cp *.kicad_pcb $$output_dir/; \
 		kiplot -c $$ROOT/base.kiplot.yaml -d $$output_dir -s run_erc,run_drc pdf_pcb_print pcbdraw_bot pcbdraw_top step dxf ibom pdf_sch_print || exit $$?; \
 		cd $$ROOT; \
 	done
