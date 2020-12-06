@@ -3,7 +3,7 @@ name: create-release
 on:
   push:
     tags:
-      - 'v*'
+      - '*'
 
 jobs:
   gen_artifacts:
