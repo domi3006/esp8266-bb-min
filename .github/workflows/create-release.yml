@@ -42,7 +42,7 @@ jobs:
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: ./fabrication.zip
-        asset_name: fabrication
+        asset_name: fabrication.zip
         tag: ${{ github.ref }}
         overwrite: true
         body: Release ${{ github.ref }}
