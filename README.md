@@ -1,6 +1,6 @@
 # esp8266-bb-min
 
-![esp8266-bb-min](https://github.com/domi3006/esp8266-bb-min/workflows/esp8266-bb-min/badge.svg)
+![build](https://github.com/domi3006/esp8266-bb-min/workflows/build/badge.svg?branch=master)
 
 This repository contains only private projects with esp8266.
 
