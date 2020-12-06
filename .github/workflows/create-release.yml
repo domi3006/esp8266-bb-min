@@ -14,13 +14,13 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: 'true'
-    - name: run artifacts
+    - name: create artifacts
       run: |
         make all
-    - name: create release-zip
+    - name: create release-zip from artifacts
       run: |
         zip --junk-paths fabrication Fabrication/
-    - name: Create Release
+    - name: create release
       id: create_release
       uses: actions/create-release@v1
       env:
@@ -30,7 +30,7 @@ jobs:
         release_name: Release ${{ github.ref }}
         draft: false
         prerelease: false
-    - name: Upload Release Asset
+    - name: upload release asset
       id: upload-release-asset 
       uses: actions/upload-release-asset@v1
       env:
