@@ -29,12 +29,13 @@ jobs:
     steps:
     - name: get artifacts
       uses: actions/download-artifact@v2
+      id: get_artifacts
       with:
         name: artifacts
         path: Fabrication/
     - name: create release-zip from artifacts
       run: |
-        zip --junk-paths fabrication Fabrication/
+        cd ${{steps.get_artifacts.outputs.download-path}}; zip -r ~/fabrication *
     - name: create release
       id: create_release
       uses: actions/create-release@v1
@@ -52,6 +53,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: ./fabrication.zip
+        asset_path: ~/fabrication.zip
         asset_name: fabrication.zip
         asset_content_type: application/zip
