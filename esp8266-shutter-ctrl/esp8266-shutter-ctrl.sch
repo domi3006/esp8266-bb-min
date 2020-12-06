@@ -152,7 +152,7 @@ F17 "shutter_button_int_a" I L 7050 5400 50
 F18 "shutter_button_int_b" I L 7050 5500 50 
 $EndSheet
 $Sheet
-S 7700 2350 500  150 
+S 7050 2850 500  150 
 U 5FCBAC22
 F0 "power" 50
 F1 "power.sch" 50
@@ -181,8 +181,16 @@ F 3 "~" H 2000 7100 50  0001 C CNN
 $EndComp
 Text Notes 2850 6550 0    50   ~ 0
 H?: XXX.XX mm/YYY.YY mm\nH1: 005.75 mm/005.75 mm\nH2: 174.25 mm/005.75 mm\nH3: 174.25 mm/074.25 mm\nH4: 005.75 mm/074.25 mm\nH5: 080.00 mm/005.75 mm\nH6: 080.00 mm/074.25 mm
-Text Notes 2850 5800 0    50   ~ 0
+Text Notes 1000 1350 0    50   ~ 0
 Portexpander I2C addresses:\n\nLEDs:     0x26\nSwitches: 0x27\nOutput:   0x25
 Text Notes 4000 7350 0    50   ~ 0
 SW??: XXX.X mm/YYY.Y mm\nSW01: 017.9 mm/027.2 mm\nSW02: 038.5 mm/027.2 mm\nSW03: 059.1 mm/027.2 mm\nSW04: 079.7 mm/027.2 mm\nSW05: 100.3 mm/027.2 mm\nSW06: 120.9 mm/027.2 mm\nSW07: 141.5 mm/027.2 mm\nSW08: 162.1 mm/027.2 mm\nSW09: 017.9 mm/052.8 mm\nSW10: 038.5 mm/052.8 mm\nSW11: 059.1 mm/052.8 mm\nSW12: 079.7 mm/052.8 mm\nSW13: 100.3 mm/052.8 mm\nSW14: 120.9 mm/052.8 mm\nSW15: 141.5 mm/052.8 mm\nSW16: 162.1 mm/052.8 mm
+Text Notes 2850 6750 0    50   ~ 0
+Mounting holes: M4
+Text Notes 2500 4200 0    50   ~ 0
+Portexpander - Output - pin assignment:\n\nGPIOB-0: shutter_0_up_out\nGPIOB-1: shutter_1_up_out\nGPIOB-2: shutter_2_up_out\nGPIOB-3: shutter_3_up_out\nGPIOB-4: shutter_4_up_out\nGPIOB-5: shutter_5_up_out\nGPIOB-6: shutter_6_up_out\nGPIOB-7: shutter_en_+12V\n\nGPIOA-0: shutter_0_dn_out\nGPIOA-1: shutter_1_dn_out\nGPIOA-2: shutter_2_dn_out\nGPIOA-3: shutter_3_dn_out\nGPIOA-4: shutter_4_dn_out\nGPIOA-5: shutter_5_dn_out\nGPIOA-6: shutter_6_dn_out
+Text Notes 4500 2500 0    50   ~ 0
+Portexpander - Switches - pin assignment:\n\nGPIOB-0: SW01 - up_0\nGPIOB-1: SW02 - up_1\nGPIOB-2: SW03 - up_2\nGPIOB-3: SW04 - up_3\nGPIOB-4: SW05 - up_4\nGPIOB-5: SW06 - up_5\nGPIOB-6: SW07 - up_6\nGPIOB-7: SW08 - up_7\n\nGPIOA-0: SW09 - dn_0\nGPIOA-1: SW10 - dn_1\nGPIOA-2: SW11 - dn_2\nGPIOA-3: SW12 - dn_3\nGPIOA-4: SW13 - dn_4\nGPIOA-5: SW14 - dn_5\nGPIOA-6: SW15 - dn_6\nGPIOA-7: SW16 - dn_7
+Text Notes 2500 2500 0    50   ~ 0
+Portexpander - LEDs - pin assignment:\n\nGPIOB-0: SW01 - up_0\nGPIOB-1: SW02 - up_1\nGPIOB-2: SW03 - up_2\nGPIOB-3: SW04 - up_3\nGPIOB-4: SW05 - up_4\nGPIOB-5: SW06 - up_5\nGPIOB-6: SW07 - up_6\nGPIOB-7: SW08 - up_7\n\nGPIOA-0: SW09 - dn_0\nGPIOA-1: SW10 - dn_1\nGPIOA-2: SW11 - dn_2\nGPIOA-3: SW12 - dn_3\nGPIOA-4: SW13 - dn_4\nGPIOA-5: SW14 - dn_5\nGPIOA-6: SW15 - dn_6\nGPIOA-7: SW16 - dn_7
 $EndSCHEMATC
