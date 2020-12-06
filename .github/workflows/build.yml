@@ -1,4 +1,4 @@
-name: esp8266-bb-min
+name: build
 
 on:
   push:
