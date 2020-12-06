@@ -1,0 +1,2039 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_MEC_5G_LED SW1
+U 1 1 5FCBAE88
+P 1650 1000
+F 0 "SW1" H 1650 1385 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 1650 1294 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 1650 1300 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1650 1300 50  0001 C CNN
+	1    1650 1000
+	1    0    0    -1  
+$EndComp
+Text Label 1150 900  2    50   ~ 0
+shutter_0_up_sw
+$Comp
+L Device:R_Small R1
+U 1 1 5FCC1619
+P 1050 750
+F 0 "R1" V 850 750 50  0000 C CNN
+F 1 "33k" V 950 750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1050 750 50  0001 C CNN
+F 3 "~" H 1050 750 50  0001 C CNN
+	1    1050 750 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5FCC23C2
+P 1050 1000
+F 0 "C1" V 1150 1000 50  0000 C CNN
+F 1 "100n" V 1250 1000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1050 1000 50  0001 C CNN
+F 3 "~" H 1050 1000 50  0001 C CNN
+	1    1050 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 750  1150 900 
+Wire Wire Line
+	1150 900  1450 900 
+Connection ~ 1150 900 
+Wire Wire Line
+	1150 900  1150 1000
+Wire Wire Line
+	1450 1000 1350 1000
+Text Label 1150 1350 2    50   ~ 0
+shutter_0_up_led
+Wire Wire Line
+	1350 1350 1150 1350
+Wire Wire Line
+	1350 1000 1350 1350
+$Comp
+L power:GND #PWR0101
+U 1 1 5FCCB9D1
+P 800 1000
+F 0 "#PWR0101" H 800 750 50  0001 C CNN
+F 1 "GND" H 805 827 50  0000 C CNN
+F 2 "" H 800 1000 50  0001 C CNN
+F 3 "" H 800 1000 50  0001 C CNN
+	1    800  1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5FCCC4D9
+P 800 750
+F 0 "#PWR0102" H 800 600 50  0001 C CNN
+F 1 "+3.3V" H 815 923 50  0000 C CNN
+F 2 "" H 800 750 50  0001 C CNN
+F 3 "" H 800 750 50  0001 C CNN
+	1    800  750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  750  950  750 
+Wire Wire Line
+	800  1000 950  1000
+$Comp
+L Device:R_Small R9
+U 1 1 5FCD4BA8
+P 1950 1100
+F 0 "R9" V 1750 1100 50  0000 C CNN
+F 1 "16" V 1850 1100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1950 1100 50  0001 C CNN
+F 3 "~" H 1950 1100 50  0001 C CNN
+	1    1950 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5FCD59A8
+P 1750 1350
+F 0 "#PWR0103" H 1750 1200 50  0001 C CNN
+F 1 "+3.3V" H 1765 1523 50  0000 C CNN
+F 2 "" H 1750 1350 50  0001 C CNN
+F 3 "" H 1750 1350 50  0001 C CNN
+	1    1750 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1200 1950 1350
+Wire Wire Line
+	1950 1350 1750 1350
+Wire Wire Line
+	1950 1000 1850 1000
+$Comp
+L Switch:SW_MEC_5G_LED SW2
+U 1 1 5FD29A3F
+P 1650 1850
+F 0 "SW2" H 1650 2235 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 1650 2144 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 1650 2150 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1650 2150 50  0001 C CNN
+	1    1650 1850
+	1    0    0    -1  
+$EndComp
+Text Label 1150 1750 2    50   ~ 0
+shutter_1_up_sw
+$Comp
+L Device:R_Small R2
+U 1 1 5FD29A46
+P 1050 1600
+F 0 "R2" V 850 1600 50  0000 C CNN
+F 1 "33k" V 950 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1050 1600 50  0001 C CNN
+F 3 "~" H 1050 1600 50  0001 C CNN
+	1    1050 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5FD29A4C
+P 1050 1850
+F 0 "C2" V 1150 1850 50  0000 C CNN
+F 1 "100n" V 1250 1850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1050 1850 50  0001 C CNN
+F 3 "~" H 1050 1850 50  0001 C CNN
+	1    1050 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 1600 1150 1750
+Wire Wire Line
+	1150 1750 1450 1750
+Connection ~ 1150 1750
+Wire Wire Line
+	1150 1750 1150 1850
+Wire Wire Line
+	1450 1850 1350 1850
+Text Label 1150 2200 2    50   ~ 0
+shutter_1_up_led
+Wire Wire Line
+	1350 2200 1150 2200
+Wire Wire Line
+	1350 1850 1350 2200
+$Comp
+L power:GND #PWR0104
+U 1 1 5FD29A5A
+P 800 1850
+F 0 "#PWR0104" H 800 1600 50  0001 C CNN
+F 1 "GND" H 805 1677 50  0000 C CNN
+F 2 "" H 800 1850 50  0001 C CNN
+F 3 "" H 800 1850 50  0001 C CNN
+	1    800  1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 5FD29A60
+P 800 1600
+F 0 "#PWR0105" H 800 1450 50  0001 C CNN
+F 1 "+3.3V" H 815 1773 50  0000 C CNN
+F 2 "" H 800 1600 50  0001 C CNN
+F 3 "" H 800 1600 50  0001 C CNN
+	1    800  1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  1600 950  1600
+Wire Wire Line
+	800  1850 950  1850
+$Comp
+L Device:R_Small R10
+U 1 1 5FD29A68
+P 1950 1950
+F 0 "R10" V 1750 1950 50  0000 C CNN
+F 1 "16" V 1850 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1950 1950 50  0001 C CNN
+F 3 "~" H 1950 1950 50  0001 C CNN
+	1    1950 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 5FD29A6E
+P 1750 2200
+F 0 "#PWR0106" H 1750 2050 50  0001 C CNN
+F 1 "+3.3V" H 1765 2373 50  0000 C CNN
+F 2 "" H 1750 2200 50  0001 C CNN
+F 3 "" H 1750 2200 50  0001 C CNN
+	1    1750 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2050 1950 2200
+Wire Wire Line
+	1950 2200 1750 2200
+Wire Wire Line
+	1950 1850 1850 1850
+$Comp
+L Switch:SW_MEC_5G_LED SW3
+U 1 1 5FD2B331
+P 1650 2700
+F 0 "SW3" H 1650 3085 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 1650 2994 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 1650 3000 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1650 3000 50  0001 C CNN
+	1    1650 2700
+	1    0    0    -1  
+$EndComp
+Text Label 1150 2600 2    50   ~ 0
+shutter_2_up_sw
+$Comp
+L Device:R_Small R3
+U 1 1 5FD2B338
+P 1050 2450
+F 0 "R3" V 850 2450 50  0000 C CNN
+F 1 "33k" V 950 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1050 2450 50  0001 C CNN
+F 3 "~" H 1050 2450 50  0001 C CNN
+	1    1050 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5FD2B33E
+P 1050 2700
+F 0 "C3" V 1150 2700 50  0000 C CNN
+F 1 "100n" V 1250 2700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1050 2700 50  0001 C CNN
+F 3 "~" H 1050 2700 50  0001 C CNN
+	1    1050 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 2450 1150 2600
+Wire Wire Line
+	1150 2600 1450 2600
+Connection ~ 1150 2600
+Wire Wire Line
+	1150 2600 1150 2700
+Wire Wire Line
+	1450 2700 1350 2700
+Text Label 1150 3050 2    50   ~ 0
+shutter_2_up_led
+Wire Wire Line
+	1350 3050 1150 3050
+Wire Wire Line
+	1350 2700 1350 3050
+$Comp
+L power:GND #PWR0107
+U 1 1 5FD2B34C
+P 800 2700
+F 0 "#PWR0107" H 800 2450 50  0001 C CNN
+F 1 "GND" H 805 2527 50  0000 C CNN
+F 2 "" H 800 2700 50  0001 C CNN
+F 3 "" H 800 2700 50  0001 C CNN
+	1    800  2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 5FD2B352
+P 800 2450
+F 0 "#PWR0108" H 800 2300 50  0001 C CNN
+F 1 "+3.3V" H 815 2623 50  0000 C CNN
+F 2 "" H 800 2450 50  0001 C CNN
+F 3 "" H 800 2450 50  0001 C CNN
+	1    800  2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  2450 950  2450
+Wire Wire Line
+	800  2700 950  2700
+$Comp
+L Device:R_Small R11
+U 1 1 5FD2B35A
+P 1950 2800
+F 0 "R11" V 1750 2800 50  0000 C CNN
+F 1 "16" V 1850 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1950 2800 50  0001 C CNN
+F 3 "~" H 1950 2800 50  0001 C CNN
+	1    1950 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 5FD2B360
+P 1750 3050
+F 0 "#PWR0109" H 1750 2900 50  0001 C CNN
+F 1 "+3.3V" H 1765 3223 50  0000 C CNN
+F 2 "" H 1750 3050 50  0001 C CNN
+F 3 "" H 1750 3050 50  0001 C CNN
+	1    1750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2900 1950 3050
+Wire Wire Line
+	1950 3050 1750 3050
+Wire Wire Line
+	1950 2700 1850 2700
+$Comp
+L Switch:SW_MEC_5G_LED SW4
+U 1 1 5FD3375A
+P 1650 3550
+F 0 "SW4" H 1650 3935 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 1650 3844 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 1650 3850 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1650 3850 50  0001 C CNN
+	1    1650 3550
+	1    0    0    -1  
+$EndComp
+Text Label 1150 3450 2    50   ~ 0
+shutter_3_up_sw
+$Comp
+L Device:R_Small R4
+U 1 1 5FD33761
+P 1050 3300
+F 0 "R4" V 850 3300 50  0000 C CNN
+F 1 "33k" V 950 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1050 3300 50  0001 C CNN
+F 3 "~" H 1050 3300 50  0001 C CNN
+	1    1050 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5FD33767
+P 1050 3550
+F 0 "C4" V 1150 3550 50  0000 C CNN
+F 1 "100n" V 1250 3550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1050 3550 50  0001 C CNN
+F 3 "~" H 1050 3550 50  0001 C CNN
+	1    1050 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 3300 1150 3450
+Wire Wire Line
+	1150 3450 1450 3450
+Connection ~ 1150 3450
+Wire Wire Line
+	1150 3450 1150 3550
+Wire Wire Line
+	1450 3550 1350 3550
+Text Label 1150 3900 2    50   ~ 0
+shutter_3_up_led
+Wire Wire Line
+	1350 3900 1150 3900
+Wire Wire Line
+	1350 3550 1350 3900
+$Comp
+L power:GND #PWR0110
+U 1 1 5FD33775
+P 800 3550
+F 0 "#PWR0110" H 800 3300 50  0001 C CNN
+F 1 "GND" H 805 3377 50  0000 C CNN
+F 2 "" H 800 3550 50  0001 C CNN
+F 3 "" H 800 3550 50  0001 C CNN
+	1    800  3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0111
+U 1 1 5FD3377B
+P 800 3300
+F 0 "#PWR0111" H 800 3150 50  0001 C CNN
+F 1 "+3.3V" H 815 3473 50  0000 C CNN
+F 2 "" H 800 3300 50  0001 C CNN
+F 3 "" H 800 3300 50  0001 C CNN
+	1    800  3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  3300 950  3300
+Wire Wire Line
+	800  3550 950  3550
+$Comp
+L Device:R_Small R12
+U 1 1 5FD33783
+P 1950 3650
+F 0 "R12" V 1750 3650 50  0000 C CNN
+F 1 "16" V 1850 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1950 3650 50  0001 C CNN
+F 3 "~" H 1950 3650 50  0001 C CNN
+	1    1950 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0112
+U 1 1 5FD33789
+P 1750 3900
+F 0 "#PWR0112" H 1750 3750 50  0001 C CNN
+F 1 "+3.3V" H 1765 4073 50  0000 C CNN
+F 2 "" H 1750 3900 50  0001 C CNN
+F 3 "" H 1750 3900 50  0001 C CNN
+	1    1750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3750 1950 3900
+Wire Wire Line
+	1950 3900 1750 3900
+Wire Wire Line
+	1950 3550 1850 3550
+$Comp
+L Switch:SW_MEC_5G_LED SW5
+U 1 1 5FD36C1B
+P 1650 4400
+F 0 "SW5" H 1650 4785 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 1650 4694 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 1650 4700 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1650 4700 50  0001 C CNN
+	1    1650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5FD36C22
+P 1050 4150
+F 0 "R5" V 850 4150 50  0000 C CNN
+F 1 "33k" V 950 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1050 4150 50  0001 C CNN
+F 3 "~" H 1050 4150 50  0001 C CNN
+	1    1050 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5FD36C28
+P 1050 4400
+F 0 "C5" V 1150 4400 50  0000 C CNN
+F 1 "100n" V 1250 4400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1050 4400 50  0001 C CNN
+F 3 "~" H 1050 4400 50  0001 C CNN
+	1    1050 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 4150 1150 4300
+Wire Wire Line
+	1150 4300 1450 4300
+Connection ~ 1150 4300
+Wire Wire Line
+	1150 4300 1150 4400
+Wire Wire Line
+	1450 4400 1350 4400
+Text Label 1150 4750 2    50   ~ 0
+shutter_4_up_led
+Wire Wire Line
+	1350 4750 1150 4750
+Wire Wire Line
+	1350 4400 1350 4750
+$Comp
+L power:GND #PWR0113
+U 1 1 5FD36C36
+P 800 4400
+F 0 "#PWR0113" H 800 4150 50  0001 C CNN
+F 1 "GND" H 805 4227 50  0000 C CNN
+F 2 "" H 800 4400 50  0001 C CNN
+F 3 "" H 800 4400 50  0001 C CNN
+	1    800  4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0114
+U 1 1 5FD36C3C
+P 800 4150
+F 0 "#PWR0114" H 800 4000 50  0001 C CNN
+F 1 "+3.3V" H 815 4323 50  0000 C CNN
+F 2 "" H 800 4150 50  0001 C CNN
+F 3 "" H 800 4150 50  0001 C CNN
+	1    800  4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  4150 950  4150
+Wire Wire Line
+	800  4400 950  4400
+$Comp
+L Device:R_Small R13
+U 1 1 5FD36C44
+P 1950 4500
+F 0 "R13" V 1750 4500 50  0000 C CNN
+F 1 "16" V 1850 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1950 4500 50  0001 C CNN
+F 3 "~" H 1950 4500 50  0001 C CNN
+	1    1950 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0115
+U 1 1 5FD36C4A
+P 1750 4750
+F 0 "#PWR0115" H 1750 4600 50  0001 C CNN
+F 1 "+3.3V" H 1765 4923 50  0000 C CNN
+F 2 "" H 1750 4750 50  0001 C CNN
+F 3 "" H 1750 4750 50  0001 C CNN
+	1    1750 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4600 1950 4750
+Wire Wire Line
+	1950 4750 1750 4750
+Wire Wire Line
+	1950 4400 1850 4400
+$Comp
+L Switch:SW_MEC_5G_LED SW6
+U 1 1 5FD38FFD
+P 1650 5250
+F 0 "SW6" H 1650 5635 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 1650 5544 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 1650 5550 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1650 5550 50  0001 C CNN
+	1    1650 5250
+	1    0    0    -1  
+$EndComp
+Text Label 1150 5150 2    50   ~ 0
+shutter_5_up_sw
+$Comp
+L Device:R_Small R6
+U 1 1 5FD39004
+P 1050 5000
+F 0 "R6" V 850 5000 50  0000 C CNN
+F 1 "33k" V 950 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1050 5000 50  0001 C CNN
+F 3 "~" H 1050 5000 50  0001 C CNN
+	1    1050 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5FD3900A
+P 1050 5250
+F 0 "C6" V 1150 5250 50  0000 C CNN
+F 1 "100n" V 1250 5250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1050 5250 50  0001 C CNN
+F 3 "~" H 1050 5250 50  0001 C CNN
+	1    1050 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 5000 1150 5150
+Wire Wire Line
+	1150 5150 1450 5150
+Connection ~ 1150 5150
+Wire Wire Line
+	1150 5150 1150 5250
+Wire Wire Line
+	1450 5250 1350 5250
+Text Label 1150 5600 2    50   ~ 0
+shutter_5_up_led
+Wire Wire Line
+	1350 5600 1150 5600
+Wire Wire Line
+	1350 5250 1350 5600
+$Comp
+L power:GND #PWR0116
+U 1 1 5FD39018
+P 800 5250
+F 0 "#PWR0116" H 800 5000 50  0001 C CNN
+F 1 "GND" H 805 5077 50  0000 C CNN
+F 2 "" H 800 5250 50  0001 C CNN
+F 3 "" H 800 5250 50  0001 C CNN
+	1    800  5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0117
+U 1 1 5FD3901E
+P 800 5000
+F 0 "#PWR0117" H 800 4850 50  0001 C CNN
+F 1 "+3.3V" H 815 5173 50  0000 C CNN
+F 2 "" H 800 5000 50  0001 C CNN
+F 3 "" H 800 5000 50  0001 C CNN
+	1    800  5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  5000 950  5000
+Wire Wire Line
+	800  5250 950  5250
+$Comp
+L Device:R_Small R14
+U 1 1 5FD39026
+P 1950 5350
+F 0 "R14" V 1750 5350 50  0000 C CNN
+F 1 "16" V 1850 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1950 5350 50  0001 C CNN
+F 3 "~" H 1950 5350 50  0001 C CNN
+	1    1950 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0118
+U 1 1 5FD3902C
+P 1750 5600
+F 0 "#PWR0118" H 1750 5450 50  0001 C CNN
+F 1 "+3.3V" H 1765 5773 50  0000 C CNN
+F 2 "" H 1750 5600 50  0001 C CNN
+F 3 "" H 1750 5600 50  0001 C CNN
+	1    1750 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5450 1950 5600
+Wire Wire Line
+	1950 5600 1750 5600
+Wire Wire Line
+	1950 5250 1850 5250
+$Comp
+L Switch:SW_MEC_5G_LED SW7
+U 1 1 5FD3D804
+P 1650 6100
+F 0 "SW7" H 1650 6485 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 1650 6394 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 1650 6400 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1650 6400 50  0001 C CNN
+	1    1650 6100
+	1    0    0    -1  
+$EndComp
+Text Label 1150 6000 2    50   ~ 0
+shutter_6_up_sw
+$Comp
+L Device:R_Small R7
+U 1 1 5FD3D80B
+P 1050 5850
+F 0 "R7" V 850 5850 50  0000 C CNN
+F 1 "33k" V 950 5850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1050 5850 50  0001 C CNN
+F 3 "~" H 1050 5850 50  0001 C CNN
+	1    1050 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5FD3D811
+P 1050 6100
+F 0 "C7" V 1150 6100 50  0000 C CNN
+F 1 "100n" V 1250 6100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1050 6100 50  0001 C CNN
+F 3 "~" H 1050 6100 50  0001 C CNN
+	1    1050 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 5850 1150 6000
+Wire Wire Line
+	1150 6000 1450 6000
+Connection ~ 1150 6000
+Wire Wire Line
+	1150 6000 1150 6100
+Wire Wire Line
+	1450 6100 1350 6100
+Text Label 1150 6450 2    50   ~ 0
+shutter_6_up_led
+Wire Wire Line
+	1350 6450 1150 6450
+Wire Wire Line
+	1350 6100 1350 6450
+$Comp
+L power:GND #PWR0119
+U 1 1 5FD3D81F
+P 800 6100
+F 0 "#PWR0119" H 800 5850 50  0001 C CNN
+F 1 "GND" H 805 5927 50  0000 C CNN
+F 2 "" H 800 6100 50  0001 C CNN
+F 3 "" H 800 6100 50  0001 C CNN
+	1    800  6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0120
+U 1 1 5FD3D825
+P 800 5850
+F 0 "#PWR0120" H 800 5700 50  0001 C CNN
+F 1 "+3.3V" H 815 6023 50  0000 C CNN
+F 2 "" H 800 5850 50  0001 C CNN
+F 3 "" H 800 5850 50  0001 C CNN
+	1    800  5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  5850 950  5850
+Wire Wire Line
+	800  6100 950  6100
+$Comp
+L Device:R_Small R15
+U 1 1 5FD3D82D
+P 1950 6200
+F 0 "R15" V 1750 6200 50  0000 C CNN
+F 1 "16" V 1850 6200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1950 6200 50  0001 C CNN
+F 3 "~" H 1950 6200 50  0001 C CNN
+	1    1950 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0121
+U 1 1 5FD3D833
+P 1750 6450
+F 0 "#PWR0121" H 1750 6300 50  0001 C CNN
+F 1 "+3.3V" H 1765 6623 50  0000 C CNN
+F 2 "" H 1750 6450 50  0001 C CNN
+F 3 "" H 1750 6450 50  0001 C CNN
+	1    1750 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 6300 1950 6450
+Wire Wire Line
+	1950 6450 1750 6450
+Wire Wire Line
+	1950 6100 1850 6100
+$Comp
+L Switch:SW_MEC_5G_LED SW8
+U 1 1 5FD40796
+P 1650 6950
+F 0 "SW8" H 1650 7335 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 1650 7244 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 1650 7250 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1650 7250 50  0001 C CNN
+	1    1650 6950
+	1    0    0    -1  
+$EndComp
+Text Label 1150 6850 2    50   ~ 0
+shutter_7_up_sw
+$Comp
+L Device:R_Small R8
+U 1 1 5FD4079D
+P 1050 6700
+F 0 "R8" V 850 6700 50  0000 C CNN
+F 1 "33k" V 950 6700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1050 6700 50  0001 C CNN
+F 3 "~" H 1050 6700 50  0001 C CNN
+	1    1050 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5FD407A3
+P 1050 6950
+F 0 "C8" V 1150 6950 50  0000 C CNN
+F 1 "100n" V 1250 6950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1050 6950 50  0001 C CNN
+F 3 "~" H 1050 6950 50  0001 C CNN
+	1    1050 6950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 6700 1150 6850
+Wire Wire Line
+	1150 6850 1450 6850
+Connection ~ 1150 6850
+Wire Wire Line
+	1150 6850 1150 6950
+Wire Wire Line
+	1450 6950 1350 6950
+Text Label 1150 7300 2    50   ~ 0
+shutter_7_up_led
+Wire Wire Line
+	1350 7300 1150 7300
+Wire Wire Line
+	1350 6950 1350 7300
+$Comp
+L power:GND #PWR0122
+U 1 1 5FD407B1
+P 800 6950
+F 0 "#PWR0122" H 800 6700 50  0001 C CNN
+F 1 "GND" H 805 6777 50  0000 C CNN
+F 2 "" H 800 6950 50  0001 C CNN
+F 3 "" H 800 6950 50  0001 C CNN
+	1    800  6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0123
+U 1 1 5FD407B7
+P 800 6700
+F 0 "#PWR0123" H 800 6550 50  0001 C CNN
+F 1 "+3.3V" H 815 6873 50  0000 C CNN
+F 2 "" H 800 6700 50  0001 C CNN
+F 3 "" H 800 6700 50  0001 C CNN
+	1    800  6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  6700 950  6700
+Wire Wire Line
+	800  6950 950  6950
+$Comp
+L Device:R_Small R16
+U 1 1 5FD407BF
+P 1950 7050
+F 0 "R16" V 1750 7050 50  0000 C CNN
+F 1 "16" V 1850 7050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1950 7050 50  0001 C CNN
+F 3 "~" H 1950 7050 50  0001 C CNN
+	1    1950 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0124
+U 1 1 5FD407C5
+P 1750 7300
+F 0 "#PWR0124" H 1750 7150 50  0001 C CNN
+F 1 "+3.3V" H 1765 7473 50  0000 C CNN
+F 2 "" H 1750 7300 50  0001 C CNN
+F 3 "" H 1750 7300 50  0001 C CNN
+	1    1750 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 7150 1950 7300
+Wire Wire Line
+	1950 7300 1750 7300
+Wire Wire Line
+	1950 6950 1850 6950
+$Comp
+L Device:R_Network08 RN1
+U 1 1 5FCBDA2D
+P 2700 4300
+F 0 "RN1" V 2083 4300 50  0000 C CNN
+F 1 "3k3" V 2174 4300 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 3175 4300 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2700 4300 50  0001 C CNN
+	1    2700 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 900  2500 900 
+Wire Wire Line
+	1850 1750 2450 1750
+Wire Wire Line
+	1850 2600 2400 2600
+Wire Wire Line
+	1850 3450 2350 3450
+Wire Wire Line
+	1850 6850 2500 6850
+Wire Wire Line
+	1850 6000 2450 6000
+Wire Wire Line
+	1850 5150 2400 5150
+Wire Wire Line
+	2500 4600 2500 6850
+Wire Wire Line
+	2450 4500 2500 4500
+Wire Wire Line
+	2450 4500 2450 6000
+Wire Wire Line
+	2400 4400 2500 4400
+Wire Wire Line
+	2400 4400 2400 5150
+Wire Wire Line
+	1850 4300 2500 4300
+Wire Wire Line
+	2500 900  2500 3900
+Wire Wire Line
+	2450 1750 2450 4000
+Wire Wire Line
+	2450 4000 2500 4000
+Wire Wire Line
+	2400 2600 2400 4100
+Wire Wire Line
+	2400 4100 2500 4100
+Wire Wire Line
+	2350 3450 2350 4200
+Wire Wire Line
+	2350 4200 2500 4200
+$Comp
+L power:GND #PWR0125
+U 1 1 5FDBF81E
+P 3000 3900
+F 0 "#PWR0125" H 3000 3650 50  0001 C CNN
+F 1 "GND" H 3005 3727 50  0000 C CNN
+F 2 "" H 3000 3900 50  0001 C CNN
+F 3 "" H 3000 3900 50  0001 C CNN
+	1    3000 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3900 3000 3900
+$Comp
+L Switch:SW_MEC_5G_LED SW9
+U 1 1 5FDD4728
+P 4250 1000
+F 0 "SW9" H 4250 1385 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 4250 1294 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 4250 1300 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 4250 1300 50  0001 C CNN
+	1    4250 1000
+	1    0    0    -1  
+$EndComp
+Text Label 3750 900  2    50   ~ 0
+shutter_0_dn_sw
+$Comp
+L Device:R_Small R17
+U 1 1 5FDD4C0D
+P 3650 750
+F 0 "R17" V 3450 750 50  0000 C CNN
+F 1 "33k" V 3550 750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3650 750 50  0001 C CNN
+F 3 "~" H 3650 750 50  0001 C CNN
+	1    3650 750 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5FDD4C17
+P 3650 1000
+F 0 "C9" V 3750 1000 50  0000 C CNN
+F 1 "100n" V 3850 1000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3650 1000 50  0001 C CNN
+F 3 "~" H 3650 1000 50  0001 C CNN
+	1    3650 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 750  3750 900 
+Wire Wire Line
+	3750 900  4050 900 
+Connection ~ 3750 900 
+Wire Wire Line
+	3750 900  3750 1000
+Wire Wire Line
+	4050 1000 3950 1000
+Text Label 3750 1350 2    50   ~ 0
+shutter_0_dn_led
+Wire Wire Line
+	3950 1350 3750 1350
+Wire Wire Line
+	3950 1000 3950 1350
+$Comp
+L power:GND #PWR0126
+U 1 1 5FDD4C29
+P 3400 1000
+F 0 "#PWR0126" H 3400 750 50  0001 C CNN
+F 1 "GND" H 3405 827 50  0000 C CNN
+F 2 "" H 3400 1000 50  0001 C CNN
+F 3 "" H 3400 1000 50  0001 C CNN
+	1    3400 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0127
+U 1 1 5FDD4C33
+P 3400 750
+F 0 "#PWR0127" H 3400 600 50  0001 C CNN
+F 1 "+3.3V" H 3415 923 50  0000 C CNN
+F 2 "" H 3400 750 50  0001 C CNN
+F 3 "" H 3400 750 50  0001 C CNN
+	1    3400 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 750  3550 750 
+Wire Wire Line
+	3400 1000 3550 1000
+$Comp
+L Device:R_Small R25
+U 1 1 5FDD4C3F
+P 4550 1100
+F 0 "R25" V 4350 1100 50  0000 C CNN
+F 1 "16" V 4450 1100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 1100 50  0001 C CNN
+F 3 "~" H 4550 1100 50  0001 C CNN
+	1    4550 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0128
+U 1 1 5FDD4C49
+P 4350 1350
+F 0 "#PWR0128" H 4350 1200 50  0001 C CNN
+F 1 "+3.3V" H 4365 1523 50  0000 C CNN
+F 2 "" H 4350 1350 50  0001 C CNN
+F 3 "" H 4350 1350 50  0001 C CNN
+	1    4350 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1200 4550 1350
+Wire Wire Line
+	4550 1350 4350 1350
+Wire Wire Line
+	4550 1000 4450 1000
+$Comp
+L Switch:SW_MEC_5G_LED SW10
+U 1 1 5FDD4C56
+P 4250 1850
+F 0 "SW10" H 4250 2235 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 4250 2144 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 4250 2150 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 4250 2150 50  0001 C CNN
+	1    4250 1850
+	1    0    0    -1  
+$EndComp
+Text Label 3750 1750 2    50   ~ 0
+shutter_1_dn_sw
+$Comp
+L Device:R_Small R18
+U 1 1 5FDD4C61
+P 3650 1600
+F 0 "R18" V 3450 1600 50  0000 C CNN
+F 1 "33k" V 3550 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3650 1600 50  0001 C CNN
+F 3 "~" H 3650 1600 50  0001 C CNN
+	1    3650 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5FDD4C6B
+P 3650 1850
+F 0 "C10" V 3750 1850 50  0000 C CNN
+F 1 "100n" V 3850 1850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3650 1850 50  0001 C CNN
+F 3 "~" H 3650 1850 50  0001 C CNN
+	1    3650 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 1600 3750 1750
+Wire Wire Line
+	3750 1750 4050 1750
+Connection ~ 3750 1750
+Wire Wire Line
+	3750 1750 3750 1850
+Wire Wire Line
+	4050 1850 3950 1850
+Text Label 3750 2200 2    50   ~ 0
+shutter_1_dn_led
+Wire Wire Line
+	3950 2200 3750 2200
+Wire Wire Line
+	3950 1850 3950 2200
+$Comp
+L power:GND #PWR0129
+U 1 1 5FDD4C7D
+P 3400 1850
+F 0 "#PWR0129" H 3400 1600 50  0001 C CNN
+F 1 "GND" H 3405 1677 50  0000 C CNN
+F 2 "" H 3400 1850 50  0001 C CNN
+F 3 "" H 3400 1850 50  0001 C CNN
+	1    3400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0130
+U 1 1 5FDD4C87
+P 3400 1600
+F 0 "#PWR0130" H 3400 1450 50  0001 C CNN
+F 1 "+3.3V" H 3415 1773 50  0000 C CNN
+F 2 "" H 3400 1600 50  0001 C CNN
+F 3 "" H 3400 1600 50  0001 C CNN
+	1    3400 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1600 3550 1600
+Wire Wire Line
+	3400 1850 3550 1850
+$Comp
+L Device:R_Small R26
+U 1 1 5FDD4C93
+P 4550 1950
+F 0 "R26" V 4350 1950 50  0000 C CNN
+F 1 "16" V 4450 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 1950 50  0001 C CNN
+F 3 "~" H 4550 1950 50  0001 C CNN
+	1    4550 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0131
+U 1 1 5FDD4C9D
+P 4350 2200
+F 0 "#PWR0131" H 4350 2050 50  0001 C CNN
+F 1 "+3.3V" H 4365 2373 50  0000 C CNN
+F 2 "" H 4350 2200 50  0001 C CNN
+F 3 "" H 4350 2200 50  0001 C CNN
+	1    4350 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2050 4550 2200
+Wire Wire Line
+	4550 2200 4350 2200
+Wire Wire Line
+	4550 1850 4450 1850
+$Comp
+L Switch:SW_MEC_5G_LED SW11
+U 1 1 5FDD4CAA
+P 4250 2700
+F 0 "SW11" H 4250 3085 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 4250 2994 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 4250 3000 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 4250 3000 50  0001 C CNN
+	1    4250 2700
+	1    0    0    -1  
+$EndComp
+Text Label 3750 2600 2    50   ~ 0
+shutter_2_dn_sw
+$Comp
+L Device:R_Small R19
+U 1 1 5FDD4CB5
+P 3650 2450
+F 0 "R19" V 3450 2450 50  0000 C CNN
+F 1 "33k" V 3550 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3650 2450 50  0001 C CNN
+F 3 "~" H 3650 2450 50  0001 C CNN
+	1    3650 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 5FDD4CBF
+P 3650 2700
+F 0 "C11" V 3750 2700 50  0000 C CNN
+F 1 "100n" V 3850 2700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3650 2700 50  0001 C CNN
+F 3 "~" H 3650 2700 50  0001 C CNN
+	1    3650 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 2450 3750 2600
+Wire Wire Line
+	3750 2600 4050 2600
+Connection ~ 3750 2600
+Wire Wire Line
+	3750 2600 3750 2700
+Wire Wire Line
+	4050 2700 3950 2700
+Text Label 3750 3050 2    50   ~ 0
+shutter_2_dn_led
+Wire Wire Line
+	3950 3050 3750 3050
+Wire Wire Line
+	3950 2700 3950 3050
+$Comp
+L power:GND #PWR0132
+U 1 1 5FDD4CD1
+P 3400 2700
+F 0 "#PWR0132" H 3400 2450 50  0001 C CNN
+F 1 "GND" H 3405 2527 50  0000 C CNN
+F 2 "" H 3400 2700 50  0001 C CNN
+F 3 "" H 3400 2700 50  0001 C CNN
+	1    3400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0133
+U 1 1 5FDD4CDB
+P 3400 2450
+F 0 "#PWR0133" H 3400 2300 50  0001 C CNN
+F 1 "+3.3V" H 3415 2623 50  0000 C CNN
+F 2 "" H 3400 2450 50  0001 C CNN
+F 3 "" H 3400 2450 50  0001 C CNN
+	1    3400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2450 3550 2450
+Wire Wire Line
+	3400 2700 3550 2700
+$Comp
+L Device:R_Small R27
+U 1 1 5FDD4CE7
+P 4550 2800
+F 0 "R27" V 4350 2800 50  0000 C CNN
+F 1 "16" V 4450 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 2800 50  0001 C CNN
+F 3 "~" H 4550 2800 50  0001 C CNN
+	1    4550 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0134
+U 1 1 5FDD4CF1
+P 4350 3050
+F 0 "#PWR0134" H 4350 2900 50  0001 C CNN
+F 1 "+3.3V" H 4365 3223 50  0000 C CNN
+F 2 "" H 4350 3050 50  0001 C CNN
+F 3 "" H 4350 3050 50  0001 C CNN
+	1    4350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2900 4550 3050
+Wire Wire Line
+	4550 3050 4350 3050
+Wire Wire Line
+	4550 2700 4450 2700
+$Comp
+L Switch:SW_MEC_5G_LED SW12
+U 1 1 5FDD4CFE
+P 4250 3550
+F 0 "SW12" H 4250 3935 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 4250 3844 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 4250 3850 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 4250 3850 50  0001 C CNN
+	1    4250 3550
+	1    0    0    -1  
+$EndComp
+Text Label 3750 3450 2    50   ~ 0
+shutter_3_dn_sw
+$Comp
+L Device:R_Small R20
+U 1 1 5FDD4D09
+P 3650 3300
+F 0 "R20" V 3450 3300 50  0000 C CNN
+F 1 "33k" V 3550 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3650 3300 50  0001 C CNN
+F 3 "~" H 3650 3300 50  0001 C CNN
+	1    3650 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 5FDD4D13
+P 3650 3550
+F 0 "C12" V 3750 3550 50  0000 C CNN
+F 1 "100n" V 3850 3550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3650 3550 50  0001 C CNN
+F 3 "~" H 3650 3550 50  0001 C CNN
+	1    3650 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 3300 3750 3450
+Wire Wire Line
+	3750 3450 4050 3450
+Connection ~ 3750 3450
+Wire Wire Line
+	3750 3450 3750 3550
+Wire Wire Line
+	4050 3550 3950 3550
+Text Label 3750 3900 2    50   ~ 0
+shutter_3_dn_led
+Wire Wire Line
+	3950 3900 3750 3900
+Wire Wire Line
+	3950 3550 3950 3900
+$Comp
+L power:GND #PWR0135
+U 1 1 5FDD4D25
+P 3400 3550
+F 0 "#PWR0135" H 3400 3300 50  0001 C CNN
+F 1 "GND" H 3405 3377 50  0000 C CNN
+F 2 "" H 3400 3550 50  0001 C CNN
+F 3 "" H 3400 3550 50  0001 C CNN
+	1    3400 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0136
+U 1 1 5FDD4D2F
+P 3400 3300
+F 0 "#PWR0136" H 3400 3150 50  0001 C CNN
+F 1 "+3.3V" H 3415 3473 50  0000 C CNN
+F 2 "" H 3400 3300 50  0001 C CNN
+F 3 "" H 3400 3300 50  0001 C CNN
+	1    3400 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3300 3550 3300
+Wire Wire Line
+	3400 3550 3550 3550
+$Comp
+L Device:R_Small R28
+U 1 1 5FDD4D3B
+P 4550 3650
+F 0 "R28" V 4350 3650 50  0000 C CNN
+F 1 "16" V 4450 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 3650 50  0001 C CNN
+F 3 "~" H 4550 3650 50  0001 C CNN
+	1    4550 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0137
+U 1 1 5FDD4D45
+P 4350 3900
+F 0 "#PWR0137" H 4350 3750 50  0001 C CNN
+F 1 "+3.3V" H 4365 4073 50  0000 C CNN
+F 2 "" H 4350 3900 50  0001 C CNN
+F 3 "" H 4350 3900 50  0001 C CNN
+	1    4350 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3750 4550 3900
+Wire Wire Line
+	4550 3900 4350 3900
+Wire Wire Line
+	4550 3550 4450 3550
+$Comp
+L Switch:SW_MEC_5G_LED SW13
+U 1 1 5FDD4D52
+P 4250 4400
+F 0 "SW13" H 4250 4785 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 4250 4694 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 4250 4700 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 4250 4700 50  0001 C CNN
+	1    4250 4400
+	1    0    0    -1  
+$EndComp
+Text Label 3750 4300 2    50   ~ 0
+shutter_4_dn_sw
+$Comp
+L Device:R_Small R21
+U 1 1 5FDD4D5D
+P 3650 4150
+F 0 "R21" V 3450 4150 50  0000 C CNN
+F 1 "33k" V 3550 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3650 4150 50  0001 C CNN
+F 3 "~" H 3650 4150 50  0001 C CNN
+	1    3650 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 5FDD4D67
+P 3650 4400
+F 0 "C13" V 3750 4400 50  0000 C CNN
+F 1 "100n" V 3850 4400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3650 4400 50  0001 C CNN
+F 3 "~" H 3650 4400 50  0001 C CNN
+	1    3650 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 4150 3750 4300
+Wire Wire Line
+	3750 4300 4050 4300
+Connection ~ 3750 4300
+Wire Wire Line
+	3750 4300 3750 4400
+Wire Wire Line
+	4050 4400 3950 4400
+Text Label 3750 4750 2    50   ~ 0
+shutter_4_dn_led
+Wire Wire Line
+	3950 4750 3750 4750
+Wire Wire Line
+	3950 4400 3950 4750
+$Comp
+L power:GND #PWR0138
+U 1 1 5FDD4D79
+P 3400 4400
+F 0 "#PWR0138" H 3400 4150 50  0001 C CNN
+F 1 "GND" H 3405 4227 50  0000 C CNN
+F 2 "" H 3400 4400 50  0001 C CNN
+F 3 "" H 3400 4400 50  0001 C CNN
+	1    3400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0139
+U 1 1 5FDD4D83
+P 3400 4150
+F 0 "#PWR0139" H 3400 4000 50  0001 C CNN
+F 1 "+3.3V" H 3415 4323 50  0000 C CNN
+F 2 "" H 3400 4150 50  0001 C CNN
+F 3 "" H 3400 4150 50  0001 C CNN
+	1    3400 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4150 3550 4150
+Wire Wire Line
+	3400 4400 3550 4400
+$Comp
+L Device:R_Small R29
+U 1 1 5FDD4D8F
+P 4550 4500
+F 0 "R29" V 4350 4500 50  0000 C CNN
+F 1 "16" V 4450 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 4500 50  0001 C CNN
+F 3 "~" H 4550 4500 50  0001 C CNN
+	1    4550 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0140
+U 1 1 5FDD4D99
+P 4350 4750
+F 0 "#PWR0140" H 4350 4600 50  0001 C CNN
+F 1 "+3.3V" H 4365 4923 50  0000 C CNN
+F 2 "" H 4350 4750 50  0001 C CNN
+F 3 "" H 4350 4750 50  0001 C CNN
+	1    4350 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4600 4550 4750
+Wire Wire Line
+	4550 4750 4350 4750
+Wire Wire Line
+	4550 4400 4450 4400
+$Comp
+L Switch:SW_MEC_5G_LED SW14
+U 1 1 5FDD4DA6
+P 4250 5250
+F 0 "SW14" H 4250 5635 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 4250 5544 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 4250 5550 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 4250 5550 50  0001 C CNN
+	1    4250 5250
+	1    0    0    -1  
+$EndComp
+Text Label 3750 5150 2    50   ~ 0
+shutter_5_dn_sw
+$Comp
+L Device:R_Small R22
+U 1 1 5FDD4DB1
+P 3650 5000
+F 0 "R22" V 3450 5000 50  0000 C CNN
+F 1 "33k" V 3550 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3650 5000 50  0001 C CNN
+F 3 "~" H 3650 5000 50  0001 C CNN
+	1    3650 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 5FDD4DBB
+P 3650 5250
+F 0 "C14" V 3750 5250 50  0000 C CNN
+F 1 "100n" V 3850 5250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3650 5250 50  0001 C CNN
+F 3 "~" H 3650 5250 50  0001 C CNN
+	1    3650 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 5000 3750 5150
+Wire Wire Line
+	3750 5150 4050 5150
+Connection ~ 3750 5150
+Wire Wire Line
+	3750 5150 3750 5250
+Wire Wire Line
+	4050 5250 3950 5250
+Text Label 3750 5600 2    50   ~ 0
+shutter_5_dn_led
+Wire Wire Line
+	3950 5600 3750 5600
+Wire Wire Line
+	3950 5250 3950 5600
+$Comp
+L power:GND #PWR0141
+U 1 1 5FDD4DCD
+P 3400 5250
+F 0 "#PWR0141" H 3400 5000 50  0001 C CNN
+F 1 "GND" H 3405 5077 50  0000 C CNN
+F 2 "" H 3400 5250 50  0001 C CNN
+F 3 "" H 3400 5250 50  0001 C CNN
+	1    3400 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0142
+U 1 1 5FDD4DD7
+P 3400 5000
+F 0 "#PWR0142" H 3400 4850 50  0001 C CNN
+F 1 "+3.3V" H 3415 5173 50  0000 C CNN
+F 2 "" H 3400 5000 50  0001 C CNN
+F 3 "" H 3400 5000 50  0001 C CNN
+	1    3400 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5000 3550 5000
+Wire Wire Line
+	3400 5250 3550 5250
+$Comp
+L Device:R_Small R30
+U 1 1 5FDD4DE3
+P 4550 5350
+F 0 "R30" V 4350 5350 50  0000 C CNN
+F 1 "16" V 4450 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 5350 50  0001 C CNN
+F 3 "~" H 4550 5350 50  0001 C CNN
+	1    4550 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0143
+U 1 1 5FDD4DED
+P 4350 5600
+F 0 "#PWR0143" H 4350 5450 50  0001 C CNN
+F 1 "+3.3V" H 4365 5773 50  0000 C CNN
+F 2 "" H 4350 5600 50  0001 C CNN
+F 3 "" H 4350 5600 50  0001 C CNN
+	1    4350 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5450 4550 5600
+Wire Wire Line
+	4550 5600 4350 5600
+Wire Wire Line
+	4550 5250 4450 5250
+$Comp
+L Switch:SW_MEC_5G_LED SW15
+U 1 1 5FDD4DFA
+P 4250 6100
+F 0 "SW15" H 4250 6485 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 4250 6394 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 4250 6400 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 4250 6400 50  0001 C CNN
+	1    4250 6100
+	1    0    0    -1  
+$EndComp
+Text Label 3750 6000 2    50   ~ 0
+shutter_6_dn_sw
+$Comp
+L Device:R_Small R23
+U 1 1 5FDD4E05
+P 3650 5850
+F 0 "R23" V 3450 5850 50  0000 C CNN
+F 1 "33k" V 3550 5850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3650 5850 50  0001 C CNN
+F 3 "~" H 3650 5850 50  0001 C CNN
+	1    3650 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C15
+U 1 1 5FDD4E0F
+P 3650 6100
+F 0 "C15" V 3750 6100 50  0000 C CNN
+F 1 "100n" V 3850 6100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3650 6100 50  0001 C CNN
+F 3 "~" H 3650 6100 50  0001 C CNN
+	1    3650 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 5850 3750 6000
+Wire Wire Line
+	3750 6000 4050 6000
+Connection ~ 3750 6000
+Wire Wire Line
+	3750 6000 3750 6100
+Wire Wire Line
+	4050 6100 3950 6100
+Text Label 3750 6450 2    50   ~ 0
+shutter_6_dn_led
+Wire Wire Line
+	3950 6450 3750 6450
+Wire Wire Line
+	3950 6100 3950 6450
+$Comp
+L power:GND #PWR0144
+U 1 1 5FDD4E21
+P 3400 6100
+F 0 "#PWR0144" H 3400 5850 50  0001 C CNN
+F 1 "GND" H 3405 5927 50  0000 C CNN
+F 2 "" H 3400 6100 50  0001 C CNN
+F 3 "" H 3400 6100 50  0001 C CNN
+	1    3400 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0145
+U 1 1 5FDD4E2B
+P 3400 5850
+F 0 "#PWR0145" H 3400 5700 50  0001 C CNN
+F 1 "+3.3V" H 3415 6023 50  0000 C CNN
+F 2 "" H 3400 5850 50  0001 C CNN
+F 3 "" H 3400 5850 50  0001 C CNN
+	1    3400 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5850 3550 5850
+Wire Wire Line
+	3400 6100 3550 6100
+$Comp
+L Device:R_Small R31
+U 1 1 5FDD4E37
+P 4550 6200
+F 0 "R31" V 4350 6200 50  0000 C CNN
+F 1 "16" V 4450 6200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 6200 50  0001 C CNN
+F 3 "~" H 4550 6200 50  0001 C CNN
+	1    4550 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0146
+U 1 1 5FDD4E41
+P 4350 6450
+F 0 "#PWR0146" H 4350 6300 50  0001 C CNN
+F 1 "+3.3V" H 4365 6623 50  0000 C CNN
+F 2 "" H 4350 6450 50  0001 C CNN
+F 3 "" H 4350 6450 50  0001 C CNN
+	1    4350 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 6300 4550 6450
+Wire Wire Line
+	4550 6450 4350 6450
+Wire Wire Line
+	4550 6100 4450 6100
+$Comp
+L Switch:SW_MEC_5G_LED SW16
+U 1 1 5FDD4E4E
+P 4250 6950
+F 0 "SW16" H 4250 7335 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 4250 7244 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 4250 7250 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 4250 7250 50  0001 C CNN
+	1    4250 6950
+	1    0    0    -1  
+$EndComp
+Text Label 3750 6850 2    50   ~ 0
+shutter_7_dn_sw
+$Comp
+L Device:R_Small R24
+U 1 1 5FDD4E59
+P 3650 6700
+F 0 "R24" V 3450 6700 50  0000 C CNN
+F 1 "33k" V 3550 6700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3650 6700 50  0001 C CNN
+F 3 "~" H 3650 6700 50  0001 C CNN
+	1    3650 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 5FDD4E63
+P 3650 6950
+F 0 "C16" V 3750 6950 50  0000 C CNN
+F 1 "100n" V 3850 6950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3650 6950 50  0001 C CNN
+F 3 "~" H 3650 6950 50  0001 C CNN
+	1    3650 6950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 6700 3750 6850
+Wire Wire Line
+	3750 6850 4050 6850
+Connection ~ 3750 6850
+Wire Wire Line
+	3750 6850 3750 6950
+Wire Wire Line
+	4050 6950 3950 6950
+Text Label 3750 7300 2    50   ~ 0
+shutter_7_dn_led
+Wire Wire Line
+	3950 7300 3750 7300
+Wire Wire Line
+	3950 6950 3950 7300
+$Comp
+L power:GND #PWR0147
+U 1 1 5FDD4E75
+P 3400 6950
+F 0 "#PWR0147" H 3400 6700 50  0001 C CNN
+F 1 "GND" H 3405 6777 50  0000 C CNN
+F 2 "" H 3400 6950 50  0001 C CNN
+F 3 "" H 3400 6950 50  0001 C CNN
+	1    3400 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0148
+U 1 1 5FDD4E7F
+P 3400 6700
+F 0 "#PWR0148" H 3400 6550 50  0001 C CNN
+F 1 "+3.3V" H 3415 6873 50  0000 C CNN
+F 2 "" H 3400 6700 50  0001 C CNN
+F 3 "" H 3400 6700 50  0001 C CNN
+	1    3400 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 6700 3550 6700
+Wire Wire Line
+	3400 6950 3550 6950
+$Comp
+L Device:R_Small R32
+U 1 1 5FDD4E8B
+P 4550 7050
+F 0 "R32" V 4350 7050 50  0000 C CNN
+F 1 "16" V 4450 7050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 7050 50  0001 C CNN
+F 3 "~" H 4550 7050 50  0001 C CNN
+	1    4550 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0149
+U 1 1 5FDD4E95
+P 4350 7300
+F 0 "#PWR0149" H 4350 7150 50  0001 C CNN
+F 1 "+3.3V" H 4365 7473 50  0000 C CNN
+F 2 "" H 4350 7300 50  0001 C CNN
+F 3 "" H 4350 7300 50  0001 C CNN
+	1    4350 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 7150 4550 7300
+Wire Wire Line
+	4550 7300 4350 7300
+Wire Wire Line
+	4550 6950 4450 6950
+$Comp
+L Device:R_Network08 RN2
+U 1 1 5FDD4EA2
+P 5300 4300
+F 0 "RN2" V 4683 4300 50  0000 C CNN
+F 1 "3k3" V 4774 4300 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 5775 4300 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5300 4300 50  0001 C CNN
+	1    5300 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 900  5100 900 
+Wire Wire Line
+	4450 1750 5050 1750
+Wire Wire Line
+	4450 2600 5000 2600
+Wire Wire Line
+	4450 3450 4950 3450
+Wire Wire Line
+	4450 6850 5100 6850
+Wire Wire Line
+	4450 6000 5050 6000
+Wire Wire Line
+	4450 5150 5000 5150
+Wire Wire Line
+	5100 4600 5100 6850
+Wire Wire Line
+	5050 4500 5100 4500
+Wire Wire Line
+	5050 4500 5050 6000
+Wire Wire Line
+	5000 4400 5100 4400
+Wire Wire Line
+	5000 4400 5000 5150
+Wire Wire Line
+	4450 4300 5100 4300
+Wire Wire Line
+	5100 900  5100 3900
+Wire Wire Line
+	5050 1750 5050 4000
+Wire Wire Line
+	5050 4000 5100 4000
+Wire Wire Line
+	5000 2600 5000 4100
+Wire Wire Line
+	5000 4100 5100 4100
+Wire Wire Line
+	4950 3450 4950 4200
+Wire Wire Line
+	4950 4200 5100 4200
+$Comp
+L power:GND #PWR0150
+U 1 1 5FDD4EC0
+P 5600 3900
+F 0 "#PWR0150" H 5600 3650 50  0001 C CNN
+F 1 "GND" H 5605 3727 50  0000 C CNN
+F 2 "" H 5600 3900 50  0001 C CNN
+F 3 "" H 5600 3900 50  0001 C CNN
+	1    5600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3900 5600 3900
+Text Label 1150 4300 2    50   ~ 0
+shutter_4_up_sw
+$Sheet
+S 6150 4450 750  1800
+U 5FE6C027
+F0 "button_led" 50
+F1 "button_led.sch" 50
+F2 "shutter_0_up_led" O R 6900 4550 50 
+F3 "shutter_1_up_led" O R 6900 4650 50 
+F4 "shutter_2_up_led" O R 6900 4750 50 
+F5 "shutter_3_up_led" O R 6900 4850 50 
+F6 "shutter_4_up_led" O R 6900 4950 50 
+F7 "shutter_5_up_led" O R 6900 5050 50 
+F8 "shutter_6_up_led" O R 6900 5150 50 
+F9 "shutter_7_up_led" O R 6900 5250 50 
+F10 "shutter_0_dn_led" O R 6900 5450 50 
+F11 "shutter_1_dn_led" O R 6900 5550 50 
+F12 "shutter_2_dn_led" O R 6900 5650 50 
+F13 "shutter_3_dn_led" O R 6900 5750 50 
+F14 "shutter_4_dn_led" O R 6900 5850 50 
+F15 "shutter_5_dn_led" O R 6900 5950 50 
+F16 "shutter_6_dn_led" O R 6900 6050 50 
+F17 "shutter_7_dn_led" O R 6900 6150 50 
+$EndSheet
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FF53323
+P 7550 2400
+AR Path="/5FCBAC6B/5FE6C027/5FF53323" Ref="#PWR?"  Part="1" 
+AR Path="/5FCBAC6B/5FF53323" Ref="#PWR0151"  Part="1" 
+F 0 "#PWR0151" H 7550 2250 50  0001 C CNN
+F 1 "+3.3V" H 7565 2573 50  0000 C CNN
+F 2 "" H 7550 2400 50  0001 C CNN
+F 3 "" H 7550 2400 50  0001 C CNN
+	1    7550 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2400 7750 2400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FF5332A
+P 8050 1200
+AR Path="/5FCBAC6B/5FE6C027/5FF5332A" Ref="#PWR?"  Part="1" 
+AR Path="/5FCBAC6B/5FF5332A" Ref="#PWR0152"  Part="1" 
+F 0 "#PWR0152" H 8050 1050 50  0001 C CNN
+F 1 "+3.3V" H 8065 1373 50  0000 C CNN
+F 2 "" H 8050 1200 50  0001 C CNN
+F 3 "" H 8050 1200 50  0001 C CNN
+	1    8050 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1200 8450 1200
+$Comp
+L power:GND #PWR?
+U 1 1 5FF5334A
+P 8450 3400
+AR Path="/5FCBAC6B/5FE6C027/5FF5334A" Ref="#PWR?"  Part="1" 
+AR Path="/5FCBAC6B/5FF5334A" Ref="#PWR0153"  Part="1" 
+F 0 "#PWR0153" H 8450 3150 50  0001 C CNN
+F 1 "GND" H 8455 3227 50  0000 C CNN
+F 2 "" H 8450 3400 50  0001 C CNN
+F 3 "" H 8450 3400 50  0001 C CNN
+	1    8450 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 1500 0    50   BiDi ~ 0
+SDA
+Text GLabel 7750 1600 0    50   BiDi ~ 0
+SCL
+$Comp
+L Device:R_Small R?
+U 1 1 5FF53352
+P 7550 2800
+AR Path="/5FCBAC6B/5FE6C027/5FF53352" Ref="R?"  Part="1" 
+AR Path="/5FCBAC6B/5FF53352" Ref="R35"  Part="1" 
+F 0 "R35" H 7491 2754 50  0000 R CNN
+F 1 "10k" H 7491 2845 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7550 2800 50  0001 C CNN
+F 3 "~" H 7550 2800 50  0001 C CNN
+	1    7550 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FF53358
+P 7350 2900
+AR Path="/5FCBAC6B/5FE6C027/5FF53358" Ref="R?"  Part="1" 
+AR Path="/5FCBAC6B/5FF53358" Ref="R34"  Part="1" 
+F 0 "R34" H 7291 2854 50  0000 R CNN
+F 1 "10k" H 7291 2945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7350 2900 50  0001 C CNN
+F 3 "~" H 7350 2900 50  0001 C CNN
+	1    7350 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FF5335E
+P 7150 3000
+AR Path="/5FCBAC6B/5FE6C027/5FF5335E" Ref="R?"  Part="1" 
+AR Path="/5FCBAC6B/5FF5335E" Ref="R33"  Part="1" 
+F 0 "R33" H 7091 2954 50  0000 R CNN
+F 1 "10k" H 7091 3045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7150 3000 50  0001 C CNN
+F 3 "~" H 7150 3000 50  0001 C CNN
+	1    7150 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 2800 7350 2700
+Wire Wire Line
+	7350 2700 7550 2700
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FF53366
+P 7350 2700
+AR Path="/5FCBAC6B/5FE6C027/5FF53366" Ref="#PWR?"  Part="1" 
+AR Path="/5FCBAC6B/5FF53366" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 7350 2550 50  0001 C CNN
+F 1 "+3.3V" H 7365 2873 50  0000 C CNN
+F 2 "" H 7350 2700 50  0001 C CNN
+F 3 "" H 7350 2700 50  0001 C CNN
+	1    7350 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 7350 2700
+Wire Wire Line
+	7350 3000 7750 3000
+Wire Wire Line
+	7550 2900 7750 2900
+Text Notes 8000 3550 0    50   ~ 0
+A0 = 1\nA1 = 1\nA2 = 1
+$Comp
+L Interface_Expansion:MCP23017_SO U?
+U 1 1 5FF532DE
+P 8450 2300
+AR Path="/5FCBAC6B/5FE6C027/5FF532DE" Ref="U?"  Part="1" 
+AR Path="/5FCBAC6B/5FF532DE" Ref="U1"  Part="1" 
+F 0 "U1" H 8450 3581 50  0000 C CNN
+F 1 "MCP23017_SO" H 8450 3490 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 8650 1300 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 8650 1200 50  0001 L CNN
+	1    8450 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3100 7750 3100
+Wire Wire Line
+	7150 2900 7150 2700
+Wire Wire Line
+	7150 2700 7350 2700
+Text Label 6900 4550 0    50   ~ 0
+shutter_0_up_led
+Text Label 6900 4650 0    50   ~ 0
+shutter_1_up_led
+Text Label 6900 4750 0    50   ~ 0
+shutter_2_up_led
+Text Label 6900 4850 0    50   ~ 0
+shutter_3_up_led
+Text Label 6900 4950 0    50   ~ 0
+shutter_4_up_led
+Text Label 6900 5050 0    50   ~ 0
+shutter_5_up_led
+Text Label 6900 5150 0    50   ~ 0
+shutter_6_up_led
+Text Label 6900 5250 0    50   ~ 0
+shutter_7_up_led
+Text Label 6900 5450 0    50   ~ 0
+shutter_0_dn_led
+Text Label 6900 5550 0    50   ~ 0
+shutter_1_dn_led
+Text Label 6900 5650 0    50   ~ 0
+shutter_2_dn_led
+Text Label 6900 5750 0    50   ~ 0
+shutter_3_dn_led
+Text Label 6900 5850 0    50   ~ 0
+shutter_4_dn_led
+Text Label 6900 5950 0    50   ~ 0
+shutter_5_dn_led
+Text Label 6900 6050 0    50   ~ 0
+shutter_6_dn_led
+Text Label 6900 6150 0    50   ~ 0
+shutter_7_dn_led
+Text Label 9150 1500 0    50   ~ 0
+shutter_0_up_sw
+Text Label 9150 1600 0    50   ~ 0
+shutter_1_up_sw
+Text Label 9150 1700 0    50   ~ 0
+shutter_2_up_sw
+Text Label 9150 1800 0    50   ~ 0
+shutter_3_up_sw
+Text Label 9150 1900 0    50   ~ 0
+shutter_4_up_sw
+Text Label 9150 2000 0    50   ~ 0
+shutter_5_up_sw
+Text Label 9150 2100 0    50   ~ 0
+shutter_6_up_sw
+Text Label 9150 2200 0    50   ~ 0
+shutter_7_up_sw
+Text Label 9150 2400 0    50   ~ 0
+shutter_0_dn_sw
+Text Label 9150 2500 0    50   ~ 0
+shutter_1_dn_sw
+Text Label 9150 2600 0    50   ~ 0
+shutter_2_dn_sw
+Text Label 9150 2700 0    50   ~ 0
+shutter_3_dn_sw
+Text Label 9150 2800 0    50   ~ 0
+shutter_4_dn_sw
+Text Label 9150 2900 0    50   ~ 0
+shutter_5_dn_sw
+Text Label 9150 3000 0    50   ~ 0
+shutter_6_dn_sw
+Text Label 9150 3100 0    50   ~ 0
+shutter_7_dn_sw
+Wire Wire Line
+	7750 2200 7700 2200
+Wire Wire Line
+	7700 2200 7700 2150
+Wire Wire Line
+	7700 2150 7100 2150
+Text HLabel 7100 2050 0    50   3State ~ 0
+shutter_button_int_a
+Text HLabel 7100 2150 0    50   3State ~ 0
+shutter_button_int_b
+Wire Wire Line
+	7100 2050 7700 2050
+Wire Wire Line
+	7700 2050 7700 2100
+Wire Wire Line
+	7700 2100 7750 2100
+$EndSCHEMATC
